@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  30 NOV 2013 14:04
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  30 NOV 2013 20:48
 entering extended mode
-**sop_usc_draft2.1.tex
+**Statement*of*Purpose*(USC)*Version*1.tex
 
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\USC\sop_usc_draft2.1.t
-ex
+("C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\USC\Statement of Purp
+ose (USC) Version 1.tex"
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -37,8 +37,8 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\USC\sop_usc_draft2.1.a
-ux)
+("C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\USC\Statement of Purp
+ose (USC) Version 1.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
@@ -54,15 +54,16 @@ LaTeX Font Info:    ... okay on input line 10.
  [1
 
 ] [2] [3]
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\USC\sop_usc_draft2.1.a
-ux) ) 
+("C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\USC\Statement of Purp
+ose (USC) Version 1.aux") ) 
 Here is how much of TeX's memory you used:
  254 strings out of 494020
- 3291 string characters out of 3143896
+ 3491 string characters out of 3143896
  55862 words of memory out of 3000000
  3619 multiletter control sequences out of 15000+200000
  4601 words of font info for 17 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 23i,5n,19p,1538b,125s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 23i,4n,19p,1667b,125s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on sop_usc_draft2.1.dvi (3 pages, 19940 bytes).
+Output written on "Statement of Purpose (USC) Version 1.dvi" (3 pages, 20052 by
+tes).
