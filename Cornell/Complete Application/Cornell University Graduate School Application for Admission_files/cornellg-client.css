@@ -1,0 +1,3421 @@
+/* $Id: defaults.css,v 1.5 2007/10/02 12:10:40 dries Exp $ */
+
+/*
+** HTML elements
+*/
+fieldset {
+  margin-bottom: 1em;
+  padding: .5em;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  height: 1px;
+  border: 1px solid gray;
+}
+img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  text-align: left; /* LTR */
+  padding-right: 1em; /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+/*
+** Markup free clearing
+** Details: http://www.positioniseverything.net/easyclearing.html
+*/
+.clear-block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear-block {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clear-block {
+  height: 1%;
+}
+.clear-block {
+  display: block;
+}
+/* End hide from IE-mac */
+
+/* ====================================================================================================== */
+
+
+/* $Id: system.css,v 1.48.2.1 2010/11/14 14:16:29 goba Exp $ */
+
+/*
+** HTML elements
+*/
+body.drag {
+  cursor: move;
+}
+th.active img {
+  display: inline;
+}
+tr.even, tr.odd {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  padding: 0.1em 0.6em;
+}
+tr.drag {
+  background-color: #fffff0;
+}
+tr.drag-previous {
+  background-color: #ffd;
+}
+td.active {
+  background-color: #ddd;
+}
+td.checkbox, th.checkbox {
+  text-align: center;
+}
+tbody {
+  border-top: 1px solid #ccc;
+}
+tbody th {
+  border-bottom: 1px solid #ccc;
+}
+thead th {
+  text-align: left; /* LTR */
+  padding-right: 1em; /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+/*
+** Other common styles
+*/
+.breadcrumb {
+  padding-bottom: .5em
+}
+div.indentation {
+  width: 20px;
+  height: 1.7em;
+  margin: -0.4em 0.2em -0.4em -0.4em; /* LTR */
+  padding: 0.42em 0 0.42em 0.6em; /* LTR */
+  float: left; /* LTR */
+}
+div.tree-child {
+  background: url(../../misc/tree.png) no-repeat 11px center; /* LTR */
+}
+div.tree-child-last {
+  background: url(../../misc/tree-bottom.png) no-repeat 11px center; /* LTR */
+}
+div.tree-child-horizontal {
+  background: url(../../misc/tree.png) no-repeat -11px center;
+}
+.error {
+  color: #e55;
+}
+div.error {
+  border: 1px solid #d77;
+}
+div.error, tr.error {
+  background: #fcc;
+  color: #200;
+  padding: 2px;
+}
+.warning {
+  color: #e09010;
+}
+div.warning {
+  border: 1px solid #f0c020;
+}
+div.warning, tr.warning {
+  background: #ffd;
+  color: #220;
+  padding: 2px;
+}
+.ok {
+  color: #008000;
+}
+div.ok {
+  border: 1px solid #00aa00;
+}
+div.ok, tr.ok {
+  background: #dfd;
+  color: #020;
+  padding: 2px;
+}
+.item-list .icon {
+  color: #555;
+  float: right; /* LTR */
+  padding-left: 0.25em; /* LTR */
+  clear: right; /* LTR */
+}
+.item-list .title {
+  font-weight: bold;
+}
+.item-list ul {
+  margin: 0 0 0.75em 0;
+  padding: 0;
+}
+.item-list ul li {
+  margin: 0 0 0.25em 1.5em; /* LTR */
+  padding: 0;
+  list-style: disc;
+}
+ol.task-list li.active {
+  font-weight: bold;
+}
+.form-item {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+tr.odd .form-item, tr.even .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+tr.merge-down, tr.merge-down td, tr.merge-down th {
+  border-bottom-width: 0 !important;
+}
+tr.merge-up, tr.merge-up td, tr.merge-up th {
+  border-top-width: 0 !important;
+}
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: 2px solid red;
+}
+.form-item .description {
+  font-size: 0.85em;
+}
+.form-item label {
+  display: block;
+  font-weight: bold;
+}
+.form-item label.option {
+  display: inline;
+  font-weight: normal;
+}
+.form-checkboxes, .form-radios {
+  margin: 1em 0;
+}
+.form-checkboxes .form-item, .form-radios .form-item {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+.marker, .form-required {
+  color: #f00;
+}
+.more-link {
+  text-align: right; /* LTR */
+}
+.more-help-link {
+  font-size: 0.85em;
+  text-align: right; /* LTR */
+}
+.nowrap {
+  white-space: nowrap;
+}
+.item-list .pager {
+  clear: both;
+  text-align: center;
+}
+.item-list .pager li {
+  background-image:none;
+  display:inline;
+  list-style-type:none;
+  padding: 0.5em;
+}
+.pager-current {
+  font-weight:bold;
+}
+.tips {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.9em;
+}
+dl.multiselect dd.b, dl.multiselect dd.b .form-item, dl.multiselect dd.b select {
+  font-family: inherit;
+  font-size: inherit;
+  width: 14em;
+}
+dl.multiselect dd.a, dl.multiselect dd.a .form-item {
+  width: 10em;
+}
+dl.multiselect dt, dl.multiselect dd {
+  float: left; /* LTR */
+  line-height: 1.75em;
+  padding: 0;
+  margin: 0 1em 0 0; /* LTR */
+}
+dl.multiselect .form-item {
+  height: 1.75em;
+  margin: 0;
+}
+
+/*
+** Inline items (need to override above)
+*/
+.container-inline div, .container-inline label {
+  display: inline;
+}
+
+/*
+** Tab navigation
+*/
+ul.primary {
+  border-collapse: collapse;
+  padding: 0 0 0 1em; /* LTR */
+  white-space: nowrap;
+  list-style: none;
+  margin: 5px;
+  height: auto;
+  line-height: normal;
+  border-bottom: 1px solid #bbb;
+}
+ul.primary li {
+  display: inline;
+}
+ul.primary li a {
+  background-color: #ddd;
+  border-color: #bbb;
+  border-width: 1px;
+  border-style: solid solid none solid;
+  height: auto;
+  margin-right: 0.5em; /* LTR */
+  padding: 0 1em;
+  text-decoration: none;
+}
+ul.primary li.active a {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-bottom: #fff 1px solid;
+}
+ul.primary li a:hover {
+  background-color: #eee;
+  border-color: #ccc;
+  border-bottom-color: #eee;
+}
+ul.secondary {
+  border-bottom: 1px solid #bbb;
+  padding: 0.5em 1em;
+  margin: 5px;
+}
+ul.secondary li {
+  display: inline;
+  padding: 0 1em;
+  border-right: 1px solid #ccc; /* LTR */
+}
+ul.secondary a {
+  padding: 0;
+  text-decoration: none;
+}
+ul.secondary a.active {
+  border-bottom: 4px solid #999;
+}
+
+/*
+** Autocomplete styles
+*/
+/* Suggestion list */
+#autocomplete {
+  position: absolute;
+  border: 1px solid;
+  overflow: hidden;
+  z-index: 100;
+}
+#autocomplete ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#autocomplete li {
+  background: #fff;
+  color: #000;
+  white-space: pre;
+  cursor: default;
+}
+#autocomplete li.selected {
+  background: #0072b9;
+  color: #fff;
+}
+/* Animated throbber */
+html.js input.form-autocomplete {
+  background-image: url(../../misc/throbber.gif);
+  background-repeat: no-repeat;
+  background-position: 100% 2px; /* LTR */
+}
+html.js input.throbbing {
+  background-position: 100% -18px; /* LTR */
+}
+
+/*
+** Collapsing fieldsets
+*/
+html.js fieldset.collapsed {
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  margin-bottom: 0;
+  height: 1em;
+}
+html.js fieldset.collapsed * {
+  display: none;
+}
+html.js fieldset.collapsed legend {
+  display: block;
+}
+html.js fieldset.collapsible legend a {
+  padding-left: 15px; /* LTR */
+  background: url(../../misc/menu-expanded.png) 5px 75% no-repeat; /* LTR */
+}
+html.js fieldset.collapsed legend a {
+  background-image: url(../../misc/menu-collapsed.png); /* LTR */
+  background-position: 5px 50%; /* LTR */
+}
+/* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
+* html.js fieldset.collapsed legend,
+* html.js fieldset.collapsed legend *,
+* html.js fieldset.collapsed table * {
+  display: inline;
+}
+/* For Safari 2 to prevent collapsible fieldsets containing tables from dissapearing due to tableheader.js. */
+html.js fieldset.collapsible {
+  position: relative;
+}
+html.js fieldset.collapsible legend a {
+  display: block;
+}
+/* Avoid jumping around due to margins collapsing into collapsible fieldset border */
+html.js fieldset.collapsible .fieldset-wrapper {
+  overflow: auto;
+}
+
+/*
+** Resizable text areas
+*/
+.resizable-textarea {
+  width: 95%;
+}
+.resizable-textarea .grippie {
+  height: 9px;
+  overflow: hidden;
+  background: #eee url(../../misc/grippie.png) no-repeat center 2px;
+  border: 1px solid #ddd;
+  border-top-width: 0;
+  cursor: s-resize;
+}
+html.js .resizable-textarea textarea {
+  margin-bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+/*
+** Table drag and drop.
+*/
+.draggable a.tabledrag-handle {
+  cursor: move;
+  float: left; /* LTR */
+  height: 1.7em;
+  margin: -0.4em 0 -0.4em -0.5em; /* LTR */
+  padding: 0.42em 1.5em 0.42em 0.5em; /* LTR */
+  text-decoration: none;
+}
+a.tabledrag-handle:hover {
+  text-decoration: none;
+}
+a.tabledrag-handle .handle {
+  margin-top: 4px;
+  height: 13px;
+  width: 13px;
+  background: url(../../misc/draggable.png) no-repeat 0 0;
+}
+a.tabledrag-handle-hover .handle {
+  background-position: 0 -20px;
+}
+
+/*
+** Teaser splitter
+*/
+.joined + .grippie {
+  height: 5px;
+  background-position: center 1px;
+  margin-bottom: -2px;
+}
+/* Keeps inner content contained in Opera 9. */
+.teaser-checkbox {
+  padding-top: 1px;
+}
+div.teaser-button-wrapper {
+  float: right; /* LTR */
+  padding-right: 5%; /* LTR */
+  margin: 0;
+}
+.teaser-checkbox div.form-item {
+  float: right; /* LTR */
+  margin: 0 5% 0 0; /* LTR */
+  padding: 0;
+}
+textarea.teaser {
+  display: none;
+}
+html.js .no-js {
+  display: none;
+}
+
+/*
+** Progressbar styles
+*/
+.progress {
+  font-weight: bold;
+}
+.progress .bar {
+  background: #fff url(../../misc/progress.gif);
+  border: 1px solid #00375a;
+  height: 1.5em;
+  margin: 0 0.2em;
+}
+.progress .filled {
+  background: #0072b9;
+  height: 1em;
+  border-bottom: 0.5em solid #004a73;
+  width: 0%;
+}
+.progress .percentage {
+  float: right; /* LTR */
+}
+.progress-disabled {
+  float: left; /* LTR */
+}
+.ahah-progress {
+  float: left; /* LTR */
+}
+.ahah-progress .throbber {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  background: transparent url(../../misc/throbber.gif) no-repeat 0px -18px;
+  float: left; /* LTR */
+}
+tr .ahah-progress .throbber {
+  margin: 0 2px;
+}
+.ahah-progress-bar {
+  width: 16em;
+}
+
+/*
+** Formatting for welcome page
+*/
+#first-time strong {
+  display: block;
+  padding: 1.5em 0 .5em;
+}
+
+/*
+** To be used with tableselect.js
+*/
+tr.selected td {
+  background: #ffc;
+}
+
+/*
+** Floating header for tableheader.js
+*/
+table.sticky-header {
+  margin-top: 0;
+  background: #fff;
+}
+
+/*
+** Installation clean URLs
+*/
+#clean-url.install {
+  display: none;
+}
+
+/*
+** For anything you want to hide on page load when JS is enabled, so
+** that you can use the JS to control visibility and avoid flicker.
+*/
+html.js .js-hide {
+  display: none;
+}
+
+/*
+** Styles for the system modules page (admin/build/modules)
+*/
+#system-modules div.incompatible {
+  font-weight: bold;
+}
+
+/*
+** Styles for the system themes page (admin/build/themes)
+*/
+#system-themes-form div.incompatible {
+  font-weight: bold;
+}
+
+/*
+** Password strength indicator
+*/
+span.password-strength {
+  visibility: hidden;
+}
+input.password-field {
+  margin-right: 10px; /* LTR */
+}
+div.password-description {
+  padding: 0 2px;
+  margin: 4px 0 0 0;
+  font-size: 0.85em;
+  max-width: 500px;
+}
+div.password-description ul {
+  margin-bottom: 0;
+}
+.password-parent {
+  margin: 0 0 0 0;
+}
+/*
+** Password confirmation checker
+*/
+input.password-confirm {
+  margin-right: 10px; /* LTR */
+}
+.confirm-parent {
+  margin: 5px 0 0 0;
+}
+span.password-confirm {
+  visibility: hidden;
+}
+span.password-confirm span {
+  font-weight: normal;
+}
+
+
+/* ====================================================================================================== */
+
+/* $Id: system-menus.css,v 1.1 2007/10/05 14:50:25 goba Exp $ */
+/* 7/6/11 - CNet - slightly modified to resolve conflicts with major majaver widget css
+
+ul.menu {
+  list-style: none;
+  border: none;
+  text-align:left;
+}
+ul.menu li {
+  margin: 0 0 0 0.5em;
+}
+*/
+.block-content ul.menu {
+  list-style: none;
+  border: none;
+  text-align:left; /* LTR */
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+ul.menu li {
+  margin: 0 0 0 0.5em; /* LTR */
+}
+
+
+li.expanded {
+  list-style-type: circle;
+  list-style-image: url(/apply/cornellg/images/menu-expanded.png);
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.collapsed {
+  list-style-type: disc;
+  list-style-image: url(/apply/cornellg/images/menu-collapsed.png); /* LTR */
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.leaf {
+  list-style-type: square;
+  list-style-image: url(/apply/cornellg/images/menu-leaf.png);
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li a.active {
+  color: #000;
+}
+td.menu-disabled {
+  background: #ccc;
+}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+ul.links.inline {
+  display: inline;
+}
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+.block ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em; /* LTR */
+}
+
+
+/* ====================================================================================================== */
+
+/* $Id: content-module.css,v 1.1.2.6 2009/03/14 18:45:38 yched Exp $ */
+
+/* Node display */
+.field .field-label,
+.field .field-label-inline,
+.field .field-label-inline-first {
+  font-weight:bold;
+}
+.field .field-label-inline,
+.field .field-label-inline-first {
+  display:inline;
+}
+.field .field-label-inline {
+  visibility:hidden;
+}
+
+/* Node form display */
+.node-form .content-multiple-table td.content-multiple-drag {
+  width:30px;
+  padding-right:0;/*LTR*/
+}
+.node-form .content-multiple-table td.content-multiple-drag a.tabledrag-handle{
+  padding-right:.5em;/*LTR*/
+}
+
+.node-form .content-add-more .form-submit{
+  margin:0;
+}
+
+.node-form .number {
+  display:inline;
+  width:auto;
+}
+.node-form .text {
+  width:auto;
+}
+
+/* CSS overrides for Views-based autocomplete results.
+  - #autocomplete uses "white-space:pre", which is no good with
+    Views' template-based rendering
+  - Field titles are rendered with <label> in default templates,
+    but we don't want the 'form' styling it gets under .form-item
+*/
+.form-item #autocomplete .reference-autocomplete {
+  white-space:normal;
+}
+
+.form-item #autocomplete .reference-autocomplete label {
+  display:inline;
+  font-weight:normal;
+}
+
+/* 'Manage fields' overview */
+#content-field-overview-form .advanced-help-link,
+#content-display-overview-form .advanced-help-link {
+  margin: 4px 4px 0 0;/*LTR*/
+}
+#content-field-overview-form .label-group,
+#content-display-overview-form .label-group,
+#content-copy-export-form .label-group {
+  font-weight: bold;
+}
+table#content-field-overview .label-add-new-field,
+table#content-field-overview .label-add-existing-field,
+table#content-field-overview .label-add-new-group {
+  float: left;/*LTR*/
+}
+table#content-field-overview tr.content-add-new .tabledrag-changed {
+  display: none;
+}
+table#content-field-overview tr.content-add-new .description {
+  margin-bottom: 0;
+}
+table#content-field-overview .content-new {
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+
+/* 'Advanced help' pages */
+.advanced-help-topic h3,
+.advanced-help-topic h4,
+.advanced-help-topic h5,
+.advanced-help-topic h6  {
+  margin:1em 0 .5em 0;
+}
+.advanced-help-topic dd {
+  margin-bottom: .5em;
+}
+.advanced-help-topic span.code {
+  background-color:#EDF1F3;
+  font-family:"Bitstream Vera Sans Mono",Monaco,"Lucida Console",monospace;
+  font-size:0.9em;
+  padding:1px;
+}
+.advanced-help-topic .content-border {
+  border:1px solid #AAA
+}
+
+/* ====================================================================================================== */
+
+/* $Id: nice_menus.css,v 1.28 2008/07/11 16:04:44 add1sun Exp $ */
+/*
+  This file contains the basic logic for nice menus, and should not be
+  edited.  To customize the menus, it's recommended to create a custom CSS
+  file using nice_menus_default.css as a template, then configure the module
+  to use your custom CSS file (this is done in the global settings tab of
+  the theme administration.)
+*/
+
+/* Below should fix menu being a few pixels away in some themes, and menus disappearing behind other stuff. */
+.block-nice_menus {
+  line-height: normal;
+  z-index: 10;
+}
+
+ul.nice-menu,
+ul.nice-menu ul {
+  z-index: 5;
+  position: relative;
+}
+
+ul.nice-menu li {
+  position: relative;
+}
+
+ul.nice-menu a {
+  display: block;
+}
+
+ul.nice-menu ul,
+/* For Garland header. */
+#header-region ul.nice-menu ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+ul.nice-menu li.over ul {
+  visibility: visible;
+}
+
+ul.nice-menu ul li {
+  display: block;
+}
+
+ul.nice-menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Show submenus when over their parents. */
+ul.nice-menu li:hover ul,
+ul.nice-menu li.menuparent li:hover ul,
+ul.nice-menu li.menuparent li.menuparent li:hover ul,
+ul.nice-menu li.menuparent li.menuparent li.menuparent li:hover ul,
+ul.nice-menu li.over ul,
+ul.nice-menu li.menuparent li.over ul,
+ul.nice-menu li.menuparent li.menuparent li.over ul,
+ul.nice-menu li.menuparent li.menuparent li.menuparent li.over ul,
+/* Repeat all this stuff just for Garland headers. */
+#header-region ul.nice-menu li:hover ul,
+#header-region ul.nice-menu li.menuparent li:hover ul,
+#header-region ul.nice-menu li.menuparent li.menuparent li:hover ul,
+#header-region ul.nice-menu li.over ul,
+#header-region ul.nice-menu li.menuparent li.over ul,
+#header-region ul.nice-menu li.menuparent li.menuparent li.over ul {
+  visibility: visible;
+}
+
+/* Hide sub-menus initially. */
+ul.nice-menu li:hover ul ul,
+ul.nice-menu li:hover ul ul ul,
+ul.nice-menu li:hover li:hover ul ul,
+ul.nice-menu li:hover li:hover ul ul ul,
+ul.nice-menu li:hover li:hover li:hover ul ul,
+ul.nice-menu li:hover li:hover li:hover ul ul ul,
+ul.nice-menu li.over ul ul,
+ul.nice-menu li.over ul ul ul,
+ul.nice-menu li.over li.over ul ul,
+ul.nice-menu li.over li.over ul ul ul,
+ul.nice-menu li.over li.over li.over ul ul,
+ul.nice-menu li.over li.over li.over ul ul ul,
+/* Repeat all this stuff just for Garland headers. */
+#header-region ul.nice-menu li:hover ul ul,
+#header-region ul.nice-menu li:hover ul ul ul,
+#header-region ul.nice-menu li:hover li:hover ul ul,
+#header-region ul.nice-menu li:hover li:hover ul ul ul,
+#header-region ul.nice-menu li:hover li:hover li:hover ul ul,
+#header-region ul.nice-menu li:hover li:hover li:hover ul ul ul,
+#header-region ul.nice-menu li.over ul ul,
+#header-region ul.nice-menu li.over ul ul ul,
+#header-region ul.nice-menu li.over li.over ul ul,
+#header-region ul.nice-menu li.over li.over ul ul ul,
+#header-region ul.nice-menu li.over li.over li.over ul ul,
+#header-region ul.nice-menu li.over li.over li.over ul ul ul {
+  visibility: hidden;
+}
+
+/***************
+ IE 6 Fixes
+***************/
+
+/* Iframe to fix z-index bug when menu hovers over <select> fields. */
+ul.nice-menu li.menuparent ul,
+/* For Garland header. */
+#header-region ul.nice-menu li.menuparent ul {
+	overflow: visible !important;
+	/* overflow: hidden; */
+}
+
+ul.nice-menu li.menuparent ul iframe,
+/* For Garland header. */
+#header-region ul.nice-menu li.menuparent ul iframe {
+	display: none;
+	display/**/: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: mask();
+	width: 20px;
+	height: 20px;
+}
+
+/* ====================================================================================================== */
+
+#block-cornell_study-cornell_study_search {
+  background: #951b10 url('/apply/cornellg/images/search-bg.png') repeat-x top left;
+  margin-bottom: 1px;
+  height: 133px;
+  position: absolute;
+  z-index: 1000;
+}
+
+#block-cornell_study-cornell_study_search .block-content {
+
+}
+
+#block-cornell_study-cornell_study_search h2 {
+  background: transparent url('/apply/cornellg/images/title-bg.png') no-repeat 128px 13px;
+  color: #fff;
+  margin-bottom: 2px;
+  padding-bottom: 0px;
+  padding-right: 15px;
+  font-size: 18px;
+  width: 125px;
+}
+
+#block-cornell_study-cornell_study_search #search {
+  width: 225px;
+  font-size: .8em;
+  font-family: sans-serif;
+  padding: 10px 0px 13px 10px;
+  height: 110px;
+}
+
+#block-cornell_study-cornell_study_search #chooser {
+  display: block;
+  width: 240px;
+  color: #ccc;
+  overflow: auto;
+}
+
+#block-cornell_study-cornell_study_search #chooser input,
+#block-cornell_study-cornell_study_search #chooser label {
+  border: 0px;
+  float: left;
+  margin-right: 3px;
+}
+
+#block-cornell_study-cornell_study_search #chooser label {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+#block-cornell_study-cornell_study_search #chooser-submit {
+  display: block;
+  position: relative;
+}
+
+#block-cornell_study-cornell_study_search #submitbutton {
+  background: transparent url('/apply/cornellg/images/search-button-bg.png') no-repeat top left;
+  border: 0px;
+  text-indent: 1000px;
+  overflow: hidden;
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 38px;
+  cursor: pointer;
+}
+
+#block-cornell_study-cornell_study_search input.blur {
+  color: #a8a8a8;
+}
+
+#block-cornell_study-cornell_study_search #searchvalue {
+  background: transparent url('/apply/cornellg/images/search-area-bg.png') no-repeat top left;
+  display: block;
+  width: 170px;
+  height: 33px;
+  margin-top: 9px;
+  border: 0px;
+  padding: 0px 30px 0px 10px;
+  line-height: 34px;
+}
+
+#block-cornell_study-cornell_study_search #display {
+  position: absolute;
+  display: block;
+  margin-top: 10px;
+  width: 215px;
+  height: 145px;
+  overflow: auto;
+  font-size: .9em;
+  z-index: 1003;
+}
+
+#block-cornell_study-cornell_study_search #display span:first-child {
+
+}
+
+#block-cornell_study-cornell_study_search #display span {
+  color: #ccc;
+  display: block;
+  padding: 3px 5px 3px 3px;
+  font-size: 12px;
+}
+
+#block-cornell_study-cornell_study_search #display span:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#block-cornell_study-cornell_study_search #viewall:hover {
+  cursor: pointer;
+}
+
+#block-cornell_study-cornell_study_search #viewall p,
+#block-cornell_study-cornell_study_search #viewall p a {
+  display: block;
+  position: relative;
+  color: #ccc;
+  font-size: 11px;
+  padding-left: 3px;
+}
+
+#block-cornell_study-cornell_study_search #viewall p a {
+  padding-left: 0px;
+}
+
+#display-content span {
+  cursor: pointer;
+  color: #B61B19;
+}
+
+#display-content span:hover {
+  text-decoration: underline;
+  color: #777;
+}
+
+/* ====================================================================================================== */
+
+/**
+ * @file
+ * BASE_THEME layout
+ */
+ 
+#page {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 965px;
+}
+
+#sidebar-left,
+#main,
+#sidebar-right {
+  float: left;
+}
+
+#sidebar-left {
+  width: 235px;
+} 
+
+#sidebar-right {
+  width: 204px;
+}
+
+/*
+body.one-sidebar #main {
+  width: 730px;
+}
+
+body.two-sidebars #main {
+  width: 526px;
+}
+
+body.sidebar-left #main-squeeze {
+  margin-left: 18px;
+}
+
+body.sidebar-right #main-squeeze {
+  margin-right: 20px;
+}
+
+body.two-sidebars #main-squeeze {
+  margin: 0 20px 0px 18px;
+}
+*/
+
+#main {
+  width: 730px;
+}
+#main-squeeze {
+  margin-left: 18px;
+}
+.container {
+  width: 965px;
+  margin: 0 auto;
+}
+
+#main #content {
+  position: relative;
+}
+
+#content-bottom-region {
+	margin-bottom: 9px;
+}
+
+/* ====================================================================================================== */
+
+/**
+ * @file
+ * BASE_THEME stylesheet
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #777;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.front,
+body.not-front {
+  /*background: #ccc;*/
+}
+
+/**
+ * Typography ==================================================================
+ */
+h1 {
+  font-size: 26px;
+  padding: 6px 0;
+}
+
+h1#site-name {
+  display: none;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 6px 0;
+}
+
+h3 {
+  font-size: 16px;
+  padding: 6px 0;
+}
+
+p {
+  padding: 6px 0;
+}
+
+a {
+  color: #002960;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#page-title {
+  color: #b61b19;
+  font-family: georgia, serif;
+  font-size: 32px;
+  font-weight: normal;  
+  margin-top: 20px;
+  letter-spacing: 0pt;
+  padding: 0px;
+  margin-bottom: 15px;
+  line-height: 36px;
+}
+
+.node {
+  font-size: 16px;
+  /* line-height: 20px; */
+}
+
+.node .content {
+	font-size: 14px;
+}
+
+.node p {
+/*  padding-top: 0px;*/
+}
+
+/* Content uls may get unwanted padding on <p> tags */
+.node .content li p {
+  padding: 0;
+}
+
+.node h2 { 
+	font-size:18px;
+	margin: 10px 0 -10px 0;
+	color:#B61B19;
+}
+
+/* 
+.node h3 {
+	color:#666666;
+	margin: 5px 0 -10px 0;
+}
+*/
+
+.node h4 {
+	font-weight:bold;
+	font-size: 14px;
+	margin: 10px 0 -5px 0;
+}
+
+.node ul {
+  padding-top: 0px;
+  margin-top: 10px;
+}
+
+.node li {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+
+.node ul {
+  padding-left: 15px;
+}
+
+.node li {
+  background: transparent url('/apply/cornellg/images/li-arrows.png') no-repeat 0px -140px;
+  list-style: none;
+  padding-left: 10px;
+}
+
+#content #content-content a, #content #content-content a:visited,
+.node a, .node a:visited {
+  color: #B61B19;
+  text-decoration: none;
+}
+
+#content #content-content a:hover, #content #content-content a:active,
+.node a:hover, .node a:active {
+  color: #666666;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0;
+  padding: 0.5em 0 0 2em;
+}
+
+ul li,
+ol li {
+  padding: 0.25em 0;
+}
+
+dl {
+  margin: 0.5em 0;
+}
+
+dl dt {
+  margin: 0 0 0.5em 0;
+}
+
+dl dd {
+  margin: 0 0 1em 0;
+}
+
+/**
+ * Main elements ===============================================================
+ */
+#header {
+  height: 67px;
+  padding-top: 7px;
+  position: relative;
+}
+
+#navigation {
+  border-bottom: 5px solid #b31b1b;
+  background: url(/apply/cornellg/images/navigation-bg.png) repeat-x left top;
+}
+
+#navigation-inner {
+  /*background: url(/apply/cornellg/images/background.jpg) no-repeat center top;*/
+  height: 122px !important;
+  position: relative;
+  z-index: 100;
+}
+
+#navigation-image-container {
+	width: 965px;
+	margin: 0 auto;
+	position: relative;
+}
+#navigation-image {
+  background: url(/apply/cornellg/images/background.jpg) no-repeat center top;
+  height: 122px;
+  width: 1060px;
+  margin-left: -50px;
+}
+#navigation #dark {
+  height: 50px;
+  background: url(/apply/cornellg/images/dark-bg.png) repeat;
+  margin:0 auto;
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:8;
+}
+
+#logo-title {
+  margin-left: 9px;
+  position: relative;
+  float: left;
+}
+
+#header-region {
+	float: right;
+	position: relative;
+	padding-top: 13px;
+}
+
+#container {
+
+}
+
+/*
+#main {
+
+}
+*/
+
+#sidebar-left {
+  padding-bottom: 124px;
+}
+
+#sidebar-right { 
+
+}
+
+#footer {
+
+}
+
+#footer-wrapper {
+  background: #6e6b62 url('/apply/cornellg/images/footer-line-bg.png') repeat-x left top;
+  color: #ccc;
+  margin-top: 10px;
+  position: relative;
+}
+
+#footer-wrapper .container {
+  background: #333 url('/apply/cornellg/images/footer-bg.png') repeat-x left top;
+  width: 1060px;
+}
+
+#footer-wrapper a {
+  color: #ccc;
+}
+
+#footer-wrapper p {
+  padding: 0px;
+}
+
+#bottom-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 965px;
+  margin: 0px auto;
+}
+
+#bottom-left,
+#bottom-middle,
+#bottom-right {
+  float: left;
+}
+
+#bottom-left {
+  width: 365px;
+}
+
+#bottom-middle {
+  width: 349px;
+}
+
+#bottom-right {
+  width: 245px;
+}
+
+/**
+ * Header ======================================================================
+ */
+a#logo,
+a#logo img {
+  /*display: block;*/
+}
+a#logo1,
+a#logo1 img {
+  /*display: block;*/
+}
+
+a#logo1 {
+	
+}
+a#logo1 img {
+  display: block;
+  position: absolute; 
+  top: 30px;
+  left: 72px;
+}
+
+/** 
+ * Content elements ============================================================
+ */
+#breadcrumb {
+  position: relative;
+  top: 8px;
+  left: 1px;
+}
+
+#breadcrumb .breadcrumb {
+  text-transform: lowercase;
+  color: #777777;
+  font-size: 11px;
+}
+
+#breadcrumb a{
+  color: #b41c1b;
+}
+
+.node {
+  padding-bottom: 1em;
+  position: static !important;
+}
+
+ul.links,
+ul.links.inline {
+  display: block;
+  padding: 1em 0;
+  text-align: right;
+}
+
+ul.links li {
+  padding: 0 1em;
+}
+
+.more-link {
+  text-align: right;
+}
+
+/**
+ * Comments ==================================================================== 
+ */
+#comments {
+
+}
+
+.comment {
+
+}
+
+/**
+ * Forms =======================================================================
+ */
+input,
+select,
+textarea {
+  border: 1px solid #ccc;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 2px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+}
+
+input.form-submit {
+  background: #fa9700;
+  border: 1px solid #fa9700;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 3px 5px;
+}
+
+input.form-checkbox,
+input.form-radio {
+  border: none;
+}
+
+/**
+ * Admin tabs ==================================================================
+ */
+ul.primary {
+  border: 0;
+  line-height: 26px;
+  margin: 0.5em 0;
+  padding: 0;
+  white-space: normal;
+}
+
+ul.primary li {
+}
+
+ul.primary li a,
+ul.primary li.active a,
+ul.primary li a:hover {
+  border: 1px solid #ccc;
+  padding: 2px 8px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+ul.secondary {
+  margin-left: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
+}
+
+ul.secondary li {
+  padding: 0 8px;
+}
+
+/**
+ * Messages ====================================================================
+ */
+.messages ul {
+  padding-left: 5px;
+}
+
+.messages ul li {
+  background: none;
+  display: inline;
+  padding-left: 0;
+}
+
+div.messages {
+  background: #BBDDFF none repeat scroll 0 0;
+  border: 1px solid #AACCEE;
+  color: #003366;
+  margin: 0 0 10px;
+  padding: 9px;
+}
+
+div.warning {
+  background: #FFEE66 none repeat scroll 0 0;
+  border-color: #EEDD55;
+  color: #884400;
+}
+
+div.error {
+  background: #EE6633 none repeat scroll 0 0;
+  border-color: #DD5522;
+  color: #FFFFFF;
+}
+
+div.status {
+  background: #CCFF88 none repeat scroll 0 0;
+  border-color: #BBEE77;
+  color: #336600;
+}
+
+/**
+ * Tables ======================================================================
+ */
+ 
+ /* removed by collegenet
+table {
+  width: 100%;
+}
+*/
+
+thead th {
+  border-bottom: 2px solid #d3e7f4;
+  color: #494949;
+  font-weight: bold;
+}
+
+tbody {
+  border-top: none;
+}
+
+/*
+6/27/11 Kristen - commenting out because this is doing unwanted things to the MM look.
+
+td,
+th {
+  padding: 5px;
+}
+*/
+
+tr.even,
+tr.odd,
+tbody th {
+  border: solid #d3e7f4;
+  border-width: 1px 0;
+}
+
+tr.odd,
+tr.info {
+  background-color: #edf5fa;
+}
+
+tr.even {
+  background-color: #fff;
+}
+
+tr.drag {
+  background-color: #fffff0;
+}
+
+tr.drag-previous {
+  background-color: #ffd;
+}
+
+tr.odd td.active {
+  background-color: #ddecf5;
+}
+
+tr.even td.active {
+  background-color: #e6f1f7;
+}
+
+td.region,
+td.module,
+td.container,
+td.category {
+  background-color: #d4e7f3;
+  border-bottom: 1px solid #b4d7f0;
+  border-top: 1px solid #fff;
+  color: #455067;
+  font-weight: bold;
+}
+
+/**
+ * Menus =======================================================================
+ */
+
+/* MENU WITH ALL LOWERCASE */
+/*#primary {
+
+}
+
+#block-nice_menus-1 {
+  padding-top: 6px;
+}
+
+#block-nice_menus-1 ul.nice-menu a {
+  padding-left: 0px;
+}
+
+#block-nice_menus-1 ul.nice-menu li.menu-674 a .inner {
+  padding: 0px 22px 0px 21px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-745 a .inner {
+  padding: 0px 26px 0px 25px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2165 a .inner {
+  padding: 0px 32px 0px 29px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2166 a .inner {
+  padding: 0px 33px 0px 29px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2167 a .inner {
+  padding: 0px 32px 0px 28px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2168 a .inner {
+  padding: 0px 30px 0px 30px;
+}*/
+
+#primary {
+
+}
+
+#block-nice_menus-1 {
+  padding-top: 6px;
+}
+#block-nice_menus-1 .child-container {
+	display: none;
+}
+
+#block-nice_menus-1 ul.nice-menu a {
+  padding-left: 0px;
+}
+
+#block-nice_menus-1 ul.nice-menu li.menu-674 a .inner {
+  padding: 0px 20px 0px 20px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-745 a .inner {
+  padding: 0px 24px 0px 23px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2165 a .inner {
+  padding: 0px 28px 0px 26px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2166 a .inner {
+  padding: 0px 28px 0px 26px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2167 a .inner {
+  padding: 0px 28px 0px 26px;
+}
+#block-nice_menus-1 ul.nice-menu li.menu-2168 a .inner {
+  padding: 0px 28px 0px 28px;
+}
+
+/**
+ * Blocks ======================================================================
+ */
+#sidebar-left .block {
+}
+
+#sidebar-right {
+  padding-top: 32px;
+}
+
+#sidebar-right .block { 
+
+}
+
+/**
+ * Print Link ==================================================================
+ */
+#share-links {
+  position: relative;
+  z-index: 20;
+  top: -13px;
+  right: 0px;
+}
+.print-link {
+  position: absolute;
+  top: 0px; /*was -35/-13*/
+  right: 0px;
+  text-transform: lowercase;
+  margin-right: 8px;
+  color: #777777;
+  font-size: 11px;
+  display: block;
+  width: 65px;
+}
+
+.print-link span {
+  margin-left: 0px;
+}
+
+.print-link .print_html {
+	float: left;
+	position: relative;
+}
+
+.print-link a {
+  color: #777777;
+  font-size: 11px;
+}
+.share_html {
+	position: relative;
+	float: right;
+  top: -2px;
+
+}
+
+.share_html .share-text {
+  height: 15px;
+  width: 31px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 2px 5px 0;
+  text-align: center;
+  position: relative;
+}
+
+.share_html:hover .share-text {
+  background-image: url(/apply/cornellg/images/service-links-title-bg.png);
+}
+
+.share_html ul.links {
+  display: none;
+  padding: 5px 3px;
+  text-align: left;
+  height: 68px;
+  width: 69px;
+  background-image: url(/apply/cornellg/images/service-links-bg.png);
+  position: absolute;
+  right: 0;
+  top: 16px;
+  margin-top: 1px;
+}
+
+.share_html:hover ul.links {
+  display: block;
+}
+
+.share_html ul.links li {
+  padding: 2px 5px 4px 20px;
+  display: block;
+  background: url(/apply/cornellg/images/service-links.png) no-repeat scroll 0 0 transparent;
+}
+
+.share_html ul.links li.service-links-facebook {
+  background-position: 0 -20px;
+}
+
+.share_html ul.links li.service-links-twitter {
+  background-position: 0 -40px;
+}
+
+/**
+ * Search block ================================================================
+ */
+
+#block-search-0 {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+/**
+ * Footer block ================================================================
+ */
+
+#block-block-3 {
+  margin: 15px 15px 3px 19px;
+}
+
+#block-block-3 .block-title {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 7px 0px 5px 0px;
+}
+
+#block-block-3 p {
+  line-height: 16px;
+}
+
+#block-block-3 .left,
+#block-block-3 .right {
+  width: 44%;
+  float: left;
+}
+
+#block-block-4 {
+  margin: 36px 0px 0px 66px;
+}
+
+#block-block-4 p {
+  line-height: 20px;
+}
+
+#block-block-5 {
+  margin: 39px 0px 0px 49px;
+}
+
+#block-block-5 li {
+  list-style: none;
+}
+
+#block-block-5 li {
+  background-color: #74716b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #b6b5b3;
+  width: 133px;
+  margin-bottom: 7px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px;
+}
+
+#block-block-8 {
+	font-size: 9px;
+	padding: 0px 4px;
+	position: absolute;
+	bottom: 8px;
+}
+
+/**
+ * See Also ====================================================================
+ */ 
+
+#block-views-see_also-block_1 {
+  border-left: 1px solid #e1e0de;
+  padding-left: 14px;
+  margin-top: 18px;
+}
+
+#block-views-see_also-block_1 .block-title {
+  color: #444;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 0px;
+  line-height: 9px;
+  padding-bottom: 8px;
+}
+
+#block-views-see_also-block_1 .block-content {
+  position: relative;
+  top: 3px;
+}
+
+#block-views-see_also-block_1 .views-row {
+  line-height: 24px;
+}
+
+#block-views-see_also-block_1 .views-row a {
+  color: #68645b;
+}
+
+/**
+ * Wysiwyg custom styles =======================================================
+ */
+
+.slidedown-header {
+/*  background: transparent url(/apply/cornellg/images/icons.png) no-repeat right 2px;*/
+/*  cursor: pointer;*/
+/*  padding-right: 18px;*/
+	padding: 8px 18px 0 0;
+}
+
+.slidedown-header strong {
+  background: transparent url(/apply/cornellg/images/icons.png) no-repeat right 3px;
+  cursor: pointer;
+  padding-right: 20px;
+/*	padding: 8px 18px 0 0;*/
+}
+
+.slidedown-body {
+
+}
+
+div .slidedown-body {
+  	margin-top: 5px;
+	padding: 0 5px 0 5px;
+	background: #efefef;
+}
+
+.tip-label {
+  background: transparent url(/apply/cornellg/images/icons.png) no-repeat right -55px;
+  cursor: pointer;
+  padding-right: 18px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.tip-body {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.editor-tip .bt-content {
+  background: #fff url(/apply/cornellg/images/tip-arrow.png) no-repeat left bottom;
+  border: 1px solid #b82612;
+}
+
+.cornell-list-item {
+  margin-top: 8px;
+  padding-left: 3px;
+  font-size: 16px;
+  color: #444444;
+  padding-left: 22px;
+  background: transparent url(/apply/cornellg/images/icons.png) no-repeat left -75px;
+}
+
+.cornell-list-item a {
+  text-decoration: none;
+}
+
+.cornell-list-item a:hover {
+  text-decoration: none;
+}
+
+/**
+ * Nodes, inline labels ==========================================
+ */
+.field .field-label-inline,
+.field .field-label-inline-first {
+  display:inline-block;
+  width:110px;
+  line-height: 22px;
+}
+.node-field-label-inline .field-label {
+	display:inline-block;
+  font-weight:bold;
+  width:110px;
+}
+
+.node-field-label-inline,
+.field-label-inline {
+	line-height: 22px;
+}
+.node-field-label-inline .field-content {
+}
+
+.node-field-label-inline ul,
+.node-field-label-inline ul.links,
+.node-field-label-inline ul.links-inline,
+.node-field-label-inline ul li {
+	padding: 0px;
+	text-align: left;
+	display: inline;
+	background: none;
+}
+.body-label {
+  font-weight:bold;	
+	font-size: 14px;
+	margin-top: 19px;
+}
+
+/*
+ * Events detail page
+ */
+#block-views--exp-events-page_1 .block-title,
+#block-views-calendar-calendar_block_1 .block-title {
+  color:#B31B1B;
+  font-weight:normal;
+  font-size: 18px;
+  padding: 13px 0px 22px 0px;
+  line-height: 18px;
+  font-family: Georgia, Arial, Helvetica, sans-serif;
+}
+
+#block-views--exp-events-page_1,
+#block-views-calendar-calendar_block_1 {
+	background: #fff;
+	padding: 0px;
+  font-size: 14px;
+  color: #000;
+}
+
+#block-views--exp-events-page_1 .view-calendar,
+#block-views--exp-events-page_1 .block-filter-shortcuts,
+#block-views--exp-events-page_1 .block-filter-range,
+#block-views--exp-events-page_1 .block-title,
+#block-views-calendar-calendar_block_1 .block-title {
+  background: #d3d3d3;	
+}
+#block-views--exp-events-page_1 .block-title {
+  padding-left:21px;
+  padding-right:20px;
+}
+
+#block-views--exp-events-page_1 .view-calendar {
+	padding: 0px 13px 0px 12px;
+}
+
+#block-views--exp-events-page_1 .block-filter-shortcuts,
+#block-views--exp-events-page_1 .block-filter-range {
+	padding: 0px 14px;
+}
+
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 {
+	padding: 0px 14px;
+}
+#block-views--exp-events-page_1 .block-filter-shortcuts,
+#block-views--exp-events-page_1 .block-filter-range {
+  font-size: 12px;
+}
+
+#block-views--exp-events-page_1 .block-filter-shortcuts {
+  padding-top: 19px;
+  line-height: 20px;
+}
+#block-views--exp-events-page_1 .block-filter-range {
+  padding-bottom: 18px;	
+}
+#block-views--exp-events-page_1 .block-filter-shortcuts a,
+#block-views--exp-events-page_1 .block-filter-range a {
+  color:#B31B1B;
+  text-decoration: none;
+}
+
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 .views-exposed-widget {
+	padding: 10px 10px 0px 0px;
+}
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 label {
+	font-size:18px;
+}
+
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 label.option {
+  font-size: 12px;
+}
+
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 .views-widget .form-checkboxes {
+	margin: 6px 0px 0px 0px;
+}
+
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 .views-widget .form-checkboxes .form-item {
+	margin-bottom: 10px;
+}
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 {
+	border-bottom: 3px solid #D3D3D3;
+}
+.block .calendar-calendar div.date-nav a,
+.block .calendar-calendar div.date-nav h3,
+.block .calendar-calendar td,
+.block .calendar-calendar td a {
+  color:#ffffff;
+  text-align:center;
+  text-decoration: none;
+}
+
+.block .calendar-calendar div.date-nav a,
+.block .calendar-calendar div.date-nav h3 {
+  font-weight:bold;
+}
+.block .calendar-calendar .mini {
+  border: solid 1px;
+}
+.block .calendar-calendar table.mini td.has-events a {
+  color:#B31B1B;
+}
+/*
+.block .calendar-calendar div.date-nav {
+  background-color:#A8A8A8;
+  padding: 0px 0px 1px 0px;
+}
+
+.block .calendar-calendar table.mini td {
+  background:#999999;
+  border-color:#D0D0D0;
+  height:29px;
+  width:29px;
+  padding: 0px 0px 0px 0px;
+}
+
+.block .calendar-calendar table.mini td .mini-day-on,
+.block .calendar-calendar table.mini td .mini-day-off {
+	padding: 6px 0px 0px 0px;
+}
+.block .calendar-calendar table.mini td.empty {
+  background:#BBBBBB;
+}*/
+.block .calendar-calendar table.mini td.has-events,
+.block .calendar-calendar table.mini td.has-no-events {
+  background:url('/apply/cornellg/images/calendar-day.png') center center no-repeat !important;
+}
+
+.view-header-events {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+/*
+* GENERIC TABLE STYLES
+*/
+
+/* 5/25/11 - taking all this out to avoid conflict with collegenet styles 
+		#content table {
+			margin:10px 0 40px 0; border:1px solid #6E695C;
+		}
+		#content th {
+			font-size:11px; font-weight:normal; background:#B61B19; color:#fff; border:1px solid #000;
+		}
+		#content td {
+			font-size:11px; border:1px solid #6E695C;
+		}
+		#content tr {
+			border:1px solid #6E695C;
+		}
+		#content table strong {
+			color:black;
+		}
+		#content th strong {
+			color:#fff;
+		}
+		#content tr:nth-child(odd) {
+			background: #f6f6f6; color:#333;
+		}
+		#content tr:nth-child(even) {
+			color:#333;
+		}
+		#content tr:first-child td {
+			background:#D3D3D3;
+		}
+		#content table p {
+			padding: 0;
+		}
+		#content table.two-col, #content .two-col tr, #content .two-col td, #content .two-col th {
+			background:#fff;
+			background: #fff; color:#333;
+			border: 0;
+		}
+		#content .two-col tr:nth-child(odd) {
+			background: #fff; color:#333;
+		}
+		#content .twol-col tr:nth-child(even) {
+			background: #fff; color:#333;
+		}
+		#content .two-col tr:first-child td {
+			background:#fff;
+		}
+		#content .two-col td {
+			padding-right: 20px;
+		}
+*/
+
+
+
+
+
+/*
+ * People directory page
+ */
+.view-people .view-header .directory-link a {
+	font-size: 14px !important;
+	color: #000 !important;
+	line-height: 24px !important;
+	text-decoration: none !important;
+	padding-right: 10px !important;
+	background: url("/apply/cornellg/images/li-arrows.png") no-repeat right 5px !important;
+}
+#content .view-people .view-content .views-table {
+	margin-top: 50px !important;
+	width: 699px !important;
+}
+
+
+/* 
+#content table.views-table {
+	margin: 25px 0 !important;
+	border: 0 !important;
+}
+
+#content tr:first-child td {
+	background: #DDEBEC;
+}
+*/
+
+.view-people .view-content .views-table caption {
+	text-align: left;
+	font-size: 22px;
+	margin: 0px 0 5px 0;
+}
+
+.view-people .view-content .views-table thead {
+	display: none !important;
+}
+
+.view-people .view-content .views-table table, .view-people .view-content .views-table td {
+	border: none !important;
+}
+
+.view-people .view-content .views-table thead th,
+.view-people .view-content .views-table tbody tr.odd,
+.view-people .view-content .views-table tbody tr.even {
+  border: none !important;
+}
+.view-people .view-content .views-table tbody {
+  color: #000000 !important;
+}
+
+.view-people .view-content .views-table tbody a {
+  color: #B92715 !important;
+}
+.view-people .view-content .views-table tbody tr {
+  
+}
+.view-people .view-content .views-table tbody tr.odd {
+  background: #DDEBEC !important;
+}
+.view-people .view-content .views-table tbody tr.even {
+  background: #FFFFFF !important;
+}
+.view-people .view-content .views-table tbody tr td {
+  /*padding-top: 10px;*/
+	line-height: 20px !important;
+	padding: 10px 0px 15px 0px !important;
+  vertical-align: top !important;
+}
+
+.view-people .view-content .views-table tbody tr td div {
+	
+}
+.view-people .view-content .views-table tbody tr .views-field-nothing {
+	width: 260px !important;
+}
+
+.view-people .view-content .views-table tbody tr .views-field-nothing,
+.view-people .view-content .views-table tbody tr .views-field-nothing-1,
+.view-people .view-content .views-table tbody tr .views-field-field-contact-for-value {
+	padding-left: 10px !important;
+}
+
+.view-people .view-content .views-table tbody tr {
+  font-size: 13px !important;
+	border: 0 !important;
+}
+.view-people .view-content .views-table tbody tr .views-field-nothing .table-item-title {
+	font-weight: bold !important;
+	font-size: 14px !important;
+	font-family: Georgia, Times, serif !important;
+}
+.view-people .view-content .views-table tbody tr .views-field-nothing .table-item-title,
+.view-people .view-content .views-table tbody tr .views-field-nothing .table-item-field-title-value {
+  /*margin-bottom: 5px;	*/
+}
+/*
+.view-people .view-content .views-table tbody tr .views-field-nothing .table-item-field-title-value,
+.view-people .view-content .views-table tbody tr .views-field-nothing .table-item-field-email-email {
+	font-size: 13px;
+}*/
+
+.view-people .view-content .views-table tbody tr .views-field-nothing .table-item-field-email-email {
+  /*margin-bottom: 13px;*/
+}
+.view-people .view-content .views-table tbody tr .views-field-nothing-1 {
+  width: 125px !important;
+}
+
+.view-people .view-content .views-table tbody tr .views-field-field-contact-for-value {
+  width: 286px !important;
+  padding-right: 10px !important;
+}
+
+/*
+ * Fellowship Page
+ */
+
+.page-fellowships #page-title {
+	margin-bottom: 5px;
+}
+.view-fellowship {
+	
+}
+.view-fellowship .view-header {
+  font-size: 16px;
+  margin-bottom: 37px;
+}
+
+.view-fellowship .view-header p {
+	padding: 0px;
+}
+.view-fellowship .view-filters {
+  
+}
+.view-fellowship .view-filters  form {
+  
+}
+.view-fellowship .view-filters  form .views-exposed-form {
+  margin-bottom: 50px;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widgets {
+	margin-left: 121px;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget {
+	float: none;
+	padding: 0px;
+	margin-bottom: 7px;
+	line-height: 28px;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget select,
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget input {
+  width: 220px;
+}
+
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget input#edit-keys {
+	width: 215px;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget label.option select,
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget label.option input {
+  width: auto;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget input.form-submit {
+  width: auto;
+  background: #949186;
+  margin-left: 133px;
+  margin-top: 23px;
+  height: 24px;
+  border: none;
+  font-size: 14px;
+  padding: 0px 11px 0px 8px;
+}
+
+.view-fellowship .views-throbbing {
+  float: right;
+  margin-top: 22px;
+  margin-right: 60px;
+}
+
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget input.form-submit,
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget .form-radios {
+  
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget .form-radios {
+  margin: 0px; 
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget input#edit-reset {
+	margin-left: 5px;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget label {
+  float: left;
+  width: 133px;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget label.option {
+  float: none;
+  width: auto;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget .form-radios .form-item {
+  display: inline;
+  margin-right: 24px;
+}
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget .views-widget{
+  
+}
+
+.view-fellowship .view-filters  form .views-exposed-form .views-exposed-widget label,
+.view-fellowship .view-content table thead th {
+	font-size: 14px;
+}
+
+.view-fellowship .view-content {
+	width: 698px;
+  padding: 0px 0px 0px 2px;
+}
+.view-fellowship .view-content table thead th {
+	color: #777777;
+	border-bottom: 1px solid #D3D3D3;
+}
+.view-fellowship .view-content table tbody {
+  color: #000000;
+}
+.view-fellowship .view-content table tbody a {
+  color: #B31B1B;
+}
+
+.view-fellowship .view-content table tbody tr.odd,
+.view-fellowship .view-content table tbody tr.even {
+	border: none;
+}
+.view-fellowship .view-content table tbody tr.odd {
+  background: #FFFFFF;
+}
+.view-fellowship .view-content table tbody tr.even {
+  background: #DDEBEC;
+}
+
+.view-fellowship .view-content table .views-field {
+	padding: 12px 5px 6px 5px;
+	vertical-align: top;
+}
+.view-fellowship .view-content table thead .views-field {
+	padding-bottom: 1px;
+	padding-top: 4px;
+}
+.view-fellowship .view-content table .views-field-tid-2 {
+	padding-left: 10px;
+  width: 98px;
+}
+.view-fellowship .view-content table .views-field-title {
+	width: 242px;
+}
+.view-fellowship .view-content table .views-field-tid-1 {
+	width: 170px;
+}
+.view-fellowship .view-content table .views-field-tid-3 {
+}
+
+/*
+ * Fellowship Detail page
+ */
+.node-type-fellowship .node {
+	padding-right: 10px;
+	padding-left: 2px;
+}
+.node-type-fellowship .fellowship-title {
+	color: #636363;
+	font-size: 18px;
+	font-weight: bold;
+  border-bottom: 1px solid #B2B1AD;
+}
+.node-type-fellowship .fellowship-terms,
+.node-type-fellowship .fellowship-contact {
+	font-size: 14px;
+}
+.node-type-fellowship .fellowship-header {
+	background: #DDEBEC;
+	color: #444446;
+	font-size: 16px;
+	font-weight: bold;
+  line-height: 26px;
+}
+
+.node-type-fellowship .fellowship-content {
+	margin-bottom: 24px;
+}
+.node-type-fellowship .fellowship-header,
+.node-type-fellowship .fellowship-content {
+	padding-left: 10px;
+}
+
+/*
+ * FAQ page
+ */
+.faq-content {
+  font-size: 14px;
+  color: #666666;
+}
+.faq-content .faq {
+  
+}
+.faq-content .faq .faq-category-group {
+  
+}
+.faq-content .faq .faq-category-group .faq-qa-header h5 {
+  	font-size: 18px;
+	color: #777777;
+	margin: 5px 0 10px 0;
+}
+.faq-content .faq .faq-category-group .faq-qa-header .faq-header {
+  
+}
+
+.faq-content .faq .faq-category-group .faq-qa-header .faq-header a {
+	background: transparent url(/apply/cornellg/images/icons.png) no-repeat right 4px;
+  	cursor: pointer;
+  	padding-right: 20px;
+}
+
+.faq-content .faq .faq-category-group .faq-qa-header .faq-header a,
+.faq-content .faq .faq-category-group .faq-question a {
+  text-decoration: none;
+  color: #999999;
+}
+.faq-content .faq .faq-category-group .faq-question {
+  margin: 5px 0 2px 0;
+	padding-left: 0;
+}
+.faq-content .faq .faq-category-group .faq-question a {
+	color: #777777;
+}
+.faq-content .faq .faq-category-group .faq-answer {
+	line-height: 18px;
+	margin: 3px 0 3px 0;
+	padding: 5px 10px 5px 10px;
+	background: #efefef;
+}
+
+.faq a, .faq a:visited {
+  color: #B61B19;
+  text-decoration: none;
+}
+
+.faq a:hover, .faq a:active {
+  color: #666666;
+}
+
+/*
+ * Generic list view theme
+ * (.view-spotlight and .view-news-and-announcements)
+ */
+
+#content-content .view .view-content .views-row,
+.block-generic_list_block .view .view-content .views-row {
+	clear: both;
+	margin-bottom: 22px;
+	float: left;
+	width: 100%;
+}
+
+#content-content .view .view-content .views-row-last,
+.block-generic_list_block .view .view-content .views-row-last {
+	margin-bottom: 26px;
+}
+
+#content-content .view .view-content .views-row .views-field-field-image-fid,
+.block-generic_list_block .view .view-content .views-row .views-field-field-image-fid {
+  float: left;
+  padding-right: 10px;
+  width: 80px;
+}
+#content-content .view .view-content .views-row .text-container,
+.block-generic_list_block .view .view-content .views-row .text-container {
+
+}
+#content-content .view .view-content .views-row .text-container-with-image,
+.block-generic_list_block .view .view-content .views-row .text-container-with-image {
+  margin-left: 100px;
+}
+
+#content-content .view .view-content .views-row .field-content,
+.block-generic_list_block .view .view-content .views-row .field-content { 
+  color: #666666; 
+  padding-top: 0px;
+  line-height: 18px;
+}
+
+#content-content .view .view-content .views-row .views-field-title,
+#content-content .view .view-content .views-row .views-field-title a,
+#content-content .view .view-content .views-row .views-field-title .field-content,
+.block-generic_list_block .view .view-content .views-row .views-field-title,
+.block-generic_list_block .view .view-content .views-row .views-field-title a,
+.block-generic_list_block .view .view-content .views-row .views-field-title .field-content {
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	line-height: 22px;
+}
+
+#content-content .view .view-content .views-row .views-field-view-node,
+.block-generic_list_block .view .view-content .views-row .views-field-view-node {
+	padding-top: 4px;
+}
+
+#content-content .view .view-content .views-row .views-field-view-node,
+#content-content .view .view-content .views-row .views-field-view-node a,
+.block-generic_list_block .view .view-content .views-row .views-field-view-node,
+.block-generic_list_block .view .view-content .views-row .views-field-view-node a {
+	color: #B92715;
+	text-transform: lowercase;
+	text-decoration: none;
+}
+
+/*
+ * Spotlight page
+ */
+
+.page-spotlight #content-content .view-spotlight {
+	margin-top: 15px;
+}
+
+.page-spotlight #content-content .view .view-content .views-row .views-field-field-image-fid {
+	padding-top: 6px;
+}
+
+.page-spotlight #content-content .view .view-content .views-row {
+	margin-bottom: 12px;
+}
+
+/*
+ * Sidebar node image
+ */
+
+#block-views-node_image_field-block_1 {
+  position: relative;
+}
+
+#block-views-node_image_field-block_1 .block-content,
+#block-views-node_image_field-block_1 div.view { 
+  position: static;
+}
+
+#block-views-node_image_field-block_1 .view-content .views-row,
+#block-views-node_image_field-block_1 .view-content .image-caption-container {
+  position: relative;
+  width: 204px;
+}
+
+#block-views-node_image_field-block_1 .view-content .views-row .views-field-field-image-fid {
+  
+}
+
+#block-views-node_image_field-block_1 .view-content .views-row .views-field-field-image-data,
+#block-views-node_image_field-block_1 .view-content .views-row .caption-container {
+  background:url("/apply/cornellg/images/dark-bg.png") repeat scroll 0 0 transparent;
+  bottom:3px;
+  padding: 5px 7px;
+  position:absolute;
+  width: 190px;
+  color: #FFBB00;
+  line-height: 12px;
+  font-size: 10px;
+}
+
+/*
+ * Apply button
+ */
+
+#block-nice_menus-1 ul.nice-menu {
+	float: left;
+}
+#block-nice_menus-1 .apply-button {
+	float:left;
+	margin: 5px 0px 0px 11px;
+}
+
+/**
+ * Events page
+ */
+
+.page-events #page-title {
+  margin-bottom: 9px;
+}
+
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 {
+  margin-top: 0px;
+}
+
+#block-views--exp-events-page_1 #views-exposed-form-events-page-1 .views-exposed-widget {
+  padding-top: 6px;
+}
+
+.block-filter-shortcuts-common {
+  background-color: lightGrey;
+  padding: 20px 0px 20px 16px;
+  text-align: left;
+}
+
+.block-filter-shortcuts-common .week-shortcuts {
+  margin-bottom: 4px;
+}
+
+.block-filter-shortcuts-common a {
+  color: #b31b1b;
+  font-size: 12px;
+}
+
+.block .calendar-calendar div.date-nav { 
+  background-color: #A8A8A8;
+  padding: 3px 0px 3px 0px;
+  width: 208px;
+  margin-left: 1px;
+}
+
+.date-nav div.date-heading {
+  text-align: center;
+  width: 100%;
+  float: none;
+}
+
+.date-nav .date-prev {
+  top: 4px;
+  left: 10px;
+  right: auto;
+}
+
+.date-nav .date-next {
+  top: 4px;
+  right: 10px;
+}
+
+.date-nav .date-next a {
+  background: transparent url('/apply/cornellg/images/events-arrows.png') no-repeat right center !important;
+}
+
+.date-nav .date-prev a {
+  background: transparent url('/apply/cornellg/images/events-arrows.png') no-repeat left center !important;
+}
+
+.calendar-calendar table.mini {
+  border-collapse: separate !important;
+  border-spacing: 1px 1px !important;
+  border: 0px !important;
+}
+
+.calendar-calendar table.mini td .mini-day-on,
+.calendar-calendar table.mini td .mini-day-off {
+  padding: 3px 0px 0px 0px !important;
+}
+
+.calendar-calendar table.mini .mini-day-off a {
+  color: #fff;
+}
+
+#block-views--exp-events-page_1 .views-exposed-form label {
+  color: #686459;
+}
+
+#block-views--exp-events-page_1 .views-throbbing {
+  display: none;
+}
+
+.view-events p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.view-events .views-row {
+  color: #000;
+}
+
+.view-events .views-field-field-datetime-value span,
+.view-events .views-field-field-location-value span {
+  color: #000 !important;
+  font-size: 14px;
+}
+
+.view-events .views-field-teaser {
+
+}
+
+.pager li,
+.pager li a {
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-weight: normal;
+}
+
+.pager li {
+  background-color: #e5e5e5;
+  padding: 3px 5px;
+  margin: 0px !important;
+  margin-right: 1px;
+}
+
+.pager .views-throbbing {
+  background: none !important;
+}
+
+/**
+ * Google Search Appliance
+ */
+
+#block-google_appliance-google_search {
+  /*position: absolute;
+  top: 20px;
+  right: -10px;
+  right: 0px;*/
+	position: relative;
+}
+
+#block-google_appliance-google_search .form-item {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+
+#block-google_appliance-google_search form {
+  width: 270px;  
+}
+
+#block-google_appliance-google_search label {
+  color: #000;
+  float: left;
+  text-transform: uppercase;
+  margin-right: 5px;
+  line-height: 21px;
+}
+
+#block-google_appliance-google_search .form-radios label {
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+#block-google_appliance-google_search .form-text {
+  background: transparent url(/apply/cornellg/images/search-input-bg.png) no-repeat top left;
+  border: 0px;
+  height: 22px;
+  line-height: 22px;
+  width: 158px;
+  padding: 0px;
+  margin-right: 4px;
+  padding: 0px 5px;
+}
+
+#block-google_appliance-google_search .form-radios {
+  margin: 5px 0px 0px 30px;
+}
+
+#block-google_appliance-google_search .form-radios .form-item {
+  margin-right: 11px;
+}
+
+#block-google_appliance-google_search .form-submit {
+  background-color: #f2f2f0;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  color: #323232;
+  line-height: 14px;
+  height: 22px;
+  padding: 0px 5px;
+  *padding: 0px 2px;
+  _padding: 0px 2px;
+  font-weight: bold;
+}
+
+#block-google_appliance-google_search a {
+  color: #ba2111;
+  line-height: 21px; 
+  margin-left: 5px;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.page-search #content-content form {
+  display: none;
+}
+
+/**
+ * Degree Equivalency
+ */
+
+#views-exposed-form-degree-equivalency-page-1 {
+  position: relative;
+}
+
+#views-exposed-form-degree-equivalency-page-1 label {
+  float: left;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#views-exposed-form-degree-equivalency-page-1 .views-exposed-widget {
+  width: 100%;
+}
+
+#views-exposed-form-degree-equivalency-page-1 .alphabet-wrapper {
+  position: absolute;
+  top: 4px;
+  left: 77px;
+}
+
+#views-exposed-form-degree-equivalency-page-1 .alphabet-wrapper .alphabet {
+  cursor: pointer;
+  font-size: 19px;
+  margin: 4px;
+  color: #777;
+}
+
+#views-exposed-form-degree-equivalency-page-1 .alphabet-wrapper .active {
+  color: #B61B19;
+}
+
+#views-exposed-form-degree-equivalency-page-1 .qualifications {
+  position: absolute;
+  top: 35px;
+  left: 138px;
+  width: 390px;
+}
+
+#views-exposed-form-degree-equivalency-page-1 input[type="submit"] {
+  background: transparent url('/apply/cornellg/images/search-button-bg.png') no-repeat top left;
+  border: 0px;
+  text-indent: 1000px;
+  overflow: hidden;
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 21px;
+  left: 500px;
+  cursor: pointer;
+}
+
+#views-exposed-form-degree-equivalency-page-1 .form-text {
+  background: transparent url(/apply/cornellg/images/qualifications-bg.png) no-repeat top left;
+  border: 0px;
+  height: 26px;
+  line-height: 26px;
+  width: 211px; 
+  padding: 0px;
+  margin-right: 4px;
+  padding: 0px 5px;
+}
+
+.view-degree-equivalency .views-table {
+  position: relative;
+  top: 35px;
+}
+
+#content .view-degree-equivalency .views-table th,
+#content .view-degree-equivalency .views-table td, 
+#content .view-degree-equivalency .views-table tr {
+  background: none;
+  border: 0px;
+}
+
+#content .view-degree-equivalency .views-table th {
+  color: #777;
+  border-bottom: 1px solid #d3d3d3;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 11px;
+  padding-left: 10px !important;
+}
+
+#content .view-degree-equivalency .views-table .views-field-title {
+  width: 137px;
+}
+
+#content .view-degree-equivalency .views-table td {
+  padding: 11px 8px 5px 12px !important;
+  font-size: 14px;
+  color: #777;
+}
+
+#content .view-degree-equivalency .views-table td.views-field-title {
+  font-weight: bold;
+}
+
+#content .view-degree-equivalency .views-table tr.even td {
+  background-color: #ddebec;
+}
+
+.view-degree-equivalency .view-footer {
+  background-color: #f9f9e1;
+  font-size: 11px; 
+  color: #444;
+  margin-top: 120px;
+  padding-left: 10px;
+}
+
+#content .view-degree-equivalency .views-table td.alphabet-letter {
+  font-family: georgia;
+  font-size: 31px;
+  color: #b51d1a;
+  padding: 0px 0px 9px 16px !important;
+}
+
+#content table.views-table {
+  margin: 18px 0 !important;
+}
+
+/* ====================================================================================================== */
+
+/**
+ * Grey block
+ */
+.block-grey {
+  background-color: #d3d3d3;
+  padding: 5px 20px 15px 20px;
+  margin-bottom: 1px;
+}
+
+.block-grey .block-title,
+.block-grey .block-title a {
+  font-weight: normal;
+  color: #b31b1b;
+  letter-spacing: -1px;
+}
+
+.block-grey .block-content,
+.block-grey .block-content a {
+  color: #000;
+  font-size: 14px;
+}
+
+.block-grey .block-content ul,
+.block-grey .block-content li,
+.block-grey .block-content li a {
+  background: none;
+  list-style: none;
+  list-style-type: none !important;
+  list-style-image: none !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.block-grey .block-content li {
+  background: transparent url('/apply/cornellg/images/li-arrows.png') no-repeat 0px 8px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.block-grey .block-content li {
+	background: none;
+	padding-left: 0px;
+}
+
+
+.block-grey .block-content a.active,
+.block-grey .block-content a.active-trail {
+	color: #878787;
+}
+.block-grey .block-content ul li ul li {
+  background: transparent url('/apply/cornellg/images/li-arrows-small.png') no-repeat 7px 5px;
+  padding-left: 14px;
+}
+
+.block-grey .block-content ul li ul li.first {
+  background: transparent url('/apply/cornellg/images/li-arrows-small.png') no-repeat 7px 10px;
+  padding-top: 5px;
+}
+
+.block-grey .block-content ul li ul li,
+.block-grey .block-content ul li ul li a {
+	font-size: 12px;
+	line-height: 16px;
+}
+/**
+ * Front page grey block
+ */
+.block-front_page_grey {
+  background-color: #d3d3d3;
+  padding: 10px 20px 15px 10px;
+  margin-bottom: 1px;
+}
+
+.block-front_page_grey .block-title,
+.block-front_page_grey .block-title a {
+  color: #484848;  
+  font-weight: bold;
+  text-transform: lowercase;
+  padding: 4px 0px 0px 0px;
+  font-size: 18px;
+}
+
+.block-front_page_grey .block-content,
+.block-front_page_grey .block-content a {
+  color: #000;
+  font-size: 12px;
+}
+
+.block-front_page_grey .block-content {
+	padding: 2px 0px 3px 10px;
+}
+
+.block-front_page_grey .block-content ul,
+.block-front_page_grey .block-content li,
+.block-front_page_grey .block-content li a {
+  background: none;
+  list-style: none;
+  list-style-type: none !important;
+  list-style-image: none !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.block-front_page_grey .block-content li {
+  background: transparent url('/apply/cornellg/images/li-arrows.png') no-repeat 0px 7px;
+  line-height: 22px;
+  padding-left: 9px;
+}
+/**
+ * generic list  block
+ */
+.block-generic_list_block .block-title,
+.block-generic_list_block .block-title a {
+  font-weight: bold;
+  color: #898989;
+  font-size: 17px;
+  padding: 4px 0px 12px 0px;
+}
+
+.block-generic_list_block .more-link {
+	text-align: left;
+}
+
+.block-generic_list_block .more-link a {
+  color: #B92715;
+  font-size: 13px;
+}
+/**
+ * Dark Grey block
+ */
+
+.block-dark_grey {
+  background-color: #6e695c;
+  padding: 10px 10px 16px 10px;
+  margin-bottom: 1px;
+}
+
+.block-dark_grey .block-title,
+.block-dark_grey .block-title a {
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #fff;
+  font-size: 18px;
+  padding: 4px 0px;
+}
+
+.block-dark_grey .block-content {
+  padding: 0px 10px;
+  color: #efefef;
+  font-size: 12px;
+}
+
+.block-dark_grey .block-content a {
+  color: #efefef;
+}
+
+.block-dark_grey .block-content ul,
+.block-dark_grey .block-content li {
+  background: none;
+  list-style: none;
+  list-style-type: none !important;
+  list-style-image: none !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.block-dark_grey .block-content li {
+  background: transparent url('/apply/cornellg/images/li-arrows.png') no-repeat 0px -279px;
+  line-height: 18px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+}
+
+/* ====================================================================================================== */
+
+/* $Id: nice_menus_default.css,v 1.6 2007/10/29 16:38:28 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  To help understand the CSS, the HTML looks like this, where
+    x is a number;
+    TYPE is down/left/right;
+    PATH is the menu path such as node/343;
+    MID is the menu id such as 33):
+  <ul id='nice-menu-x' class='nice-menu nice-menu-TYPE'>
+    <li id='menu-MID' class='menu-path-PATH'><a href='#'>This is a menu item</a></li>
+    <li class='menuparent menu-path-PATH'><a href='#'>A submenu</a>
+      <ul...><li...>...</li>
+      </ul>
+    </li>
+    ...
+  </ul>
+
+  If you have more than one nice-menu and want to target a particular one,
+  use its id (e.g. ul#nice-menu-2).
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for some CSS customization examples.
+*/
+
+/**
+ * Nice Menu styles
+ */
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.nice-menu {
+  /*background: transparent url('/apply/cornellg/images/primary-menu-bg.png') no-repeat left top;*/
+  height: 38px;
+  line-height: 38px;
+  padding: 0px;
+  margin-left: 9px;
+}
+
+ul.nice-menu ul {
+  top: 0px !important;
+}
+
+ul.nice-menu li {
+  background: transparent url('/apply/cornellg/images/menu-bg.png') repeat-x left top;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nice-menu li.first {
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+ul.nice-menu li.last {
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+ul.nice-menu ul,
+ul.nice-menu li li,
+ul.nice-menu li li a {
+  background: none !important;
+  border: none !important;
+}
+
+ul.nice-menu a {
+  color: white;
+  font-size: 16px;
+  height: 23px;
+  /*overflow: hidden;*/
+  padding: 0px 0px 15px 9px;
+  /*text-indent: -9999px;*/  
+/*  text-transform: lowercase;*/
+	letter-spacing: -0.20px;
+  float: left;
+}
+
+ul.nice-menu li.active-trail a {
+  color: #ffc424;
+}
+
+ul.nice-menu ul li.active-trail a {
+  color: #b31b18 !important;
+}
+
+ul.nice-menu a .inner {
+  border-right: 1px solid #9D9B95;
+  padding-right: 30px;
+  padding-left: 19px;
+}
+
+ul.nice-menu .last .inner {
+  border-right: 0px;
+}
+
+ul.nice-menu ul li {
+  line-height: 27px;
+  padding: 0px;
+}
+
+ul.nice-menu ul a {
+  border-right: none;
+  height: auto!important;
+  padding: 0 !important;
+  text-indent: 0;
+  text-transform: none;
+  width: auto!important;
+  font-size: 13px;
+  color: #3b3b3b;
+}
+
+ul.nice-menu a:hover,
+ul.nice-menu li.over a {
+  background: transparent url('/apply/cornellg/images/menu-active-bg.png') repeat-x top left;
+  color: #3b3b3b !important;
+  text-decoration: none;
+}
+
+ul.nice-menu a:hover .inner,
+ul.nice-menu li.over a .inner {
+  border-right: 0px;
+  margin-right: 1px;
+}
+
+ul.nice-menu li.over.last a .inner,
+ul.nice-menu li.last a:hover .inner {
+  margin-right: 0px;
+}
+
+ul.nice-menu li.first a:hover,
+ul.nice-menu li.over.first a {
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  border-top-left-radius: 3px;
+}
+
+ul.nice-menu li.last a:hover {
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-right-radius: 3px;
+}
+
+ul.nice-menu ul a:hover {
+  color: #b31b18 !important;
+}
+
+ul.nice-menu ul {
+  left: 0;
+  margin: 0;
+  top: 30px;
+  margin: 10px 10px 15px 0px;
+  padding-left: 10px;
+  position: static;
+}
+
+ul.nice-menu ul li {
+  clear: both;
+  padding: 0 10px;
+  width: 180px;
+}
+
+ul.nice-menu li ul li ul {
+  left: 12.5em;
+  top: -1px;
+}
+
+ul.nice-menu li.over .child-container,
+ul.nice-menu li.over .child-container ul {
+  visibility: visible !important;
+  display: block !important;
+}
+
+ul.nice-menu .over .child-container {
+  clear: both;
+  background: transparent url('/apply/cornellg/images/menu-child-bg.png') repeat left top;
+  position: absolute;
+  top: 38px;
+  padding-bottom: 10px;
+}
+
+ul.nice-menu li.over .menu-columns-1 {
+  width: 200px;
+}
+
+ul.nice-menu li.over .menu-columns-2 {
+  width: 415px;
+}
+
+ul.nice-menu li.over .menu-columns-2 .column-1 {
+  border-right: 1px solid #eeeeec !important;
+  width: 190px;
+  float: left;
+}
+
+ul.nice-menu li.over .menu-columns-2 .column-2 {
+  width: 180px;
+  float: left;
+}
+
+/**
+ * Child blocks placement
+ */
+
+.menu-2168 .child-container {
+  position: absolute;
+  right: 0;
+}
+

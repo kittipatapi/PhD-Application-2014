@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  3 DEC 2013 17:14
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2013.5.3)  3 DEC 2013 21:58
 entering extended mode
-**Cornell_SoP_v2.tex
+**Cornell_SoP_v3.tex
 
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v2
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v3
 .tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
@@ -48,7 +48,7 @@ Package: fullpage 1999/02/23 1.1 (PWD)
 \f@ncyO@olf=\skip51
 \f@ncyO@orf=\skip52
 )
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v2
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v3
 .aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -69,24 +69,31 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
- [2]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
- [3] [4]
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v2
+ [2] [3]
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v3
 .aux) ) 
 Here is how much of TeX's memory you used:
- 380 strings out of 494020
- 4654 string characters out of 3143896
- 59746 words of memory out of 3000000
+ 381 strings out of 494019
+ 4664 string characters out of 3143874
+ 57746 words of memory out of 3000000
  3740 multiletter control sequences out of 15000+200000
  4900 words of font info for 18 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 25i,10n,43p,1720b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,10n,43p,2080b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Cornell_SoP_v3.pdf (3 pages, 71879 bytes).
+PDF statistics:
+ 28 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on Cornell_SoP_v2.dvi (4 pages, 22656 bytes).

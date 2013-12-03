@@ -1,0 +1,589 @@
+/*=============================================================================================================
+										Shared styles
+=============================================================================================================*/
+
+#ufe-content{
+	margin:0;
+	padding:0;
+	background-color:transparent;
+	border:none;
+	width:100%;
+}
+
+/* controls style of fieldsets and legends */
+#ufe-content fieldset {
+	margin: 1em auto;
+	padding: 10px;
+	clear:left;
+}
+
+#ufe-content legend {
+	background: transparent;
+	padding: 0 10px 10px 10px;
+}
+
+/* controls the blue demo flag so that it doesn't get hidden by the PM widget or client looks */
+#ufe-downtime-alert {
+	z-index: 9000000 !important;
+}
+
+input[readonly], input[disabled], select[readonly], select[disabled], textarea[readonly], textarea[disabled] {
+	padding: 2px;
+	border: 1px solid #ccc;
+	background: #eee;
+	color: #666;
+}
+select[readonly], select[disabled] {
+	padding: 0;
+}
+
+
+/*=================================================================================================== 
+										Text styles 
+====================================================================================================*/
+
+#ufe-content h1, #ufe-content h2, #ufe-content h3, #ufe-content h4, #ufe-content p, #ufe-content ul{
+	background: transparent;
+	clear:left;
+}
+
+#ufe-content hr {
+	clear:both;
+	width:100%;
+}
+
+#ufe-content label {
+	margin-top:0px;
+}
+
+#ufe-content img {
+	border: none;
+}
+
+
+#ufe-content .checkbox, #ufe-content .radio {
+	float: left;
+	clear:none;
+	margin: 0 0 5px 0;
+	white-space:normal;
+}
+
+#ufe-content .checkbox label, #ufe-content .radio label{
+	white-space:normal;
+	width:auto;
+}
+
+/* for items inset in the middle of ufe-content*/ 
+.inset{
+	padding:10px 0;
+    padding-left: 45%;
+	clear:both;
+}
+
+/*Clearing*/
+#ufe-content .clearBoth {
+	clear: both;
+}
+
+#ufe-content .clearLeft{
+	clear: left;
+}
+
+#ufe-content .clearRight{
+	clear: right;
+}
+
+/*Indentation*/
+
+.indent5{
+	margin-left:5%;
+	clear:left;
+	padding:5px 0 0 0;
+}
+
+.indent10{
+	margin-left:10%;
+	clear:left;
+	padding:5px 0 0 0;
+}
+
+.indent15{
+	margin-left:15%;
+	clear:left;
+	padding-top:5px;
+}
+
+.indent20{
+	margin-left:20%;
+	clear:left;
+	padding-top:5px;
+}
+
+.indent25{
+	margin-left:25%;
+	clear:left;
+	padding-top:5px;
+}
+
+.indent30{
+	margin-left:30%;
+	clear:left;
+	padding-top:5px;
+}
+
+.indent35{
+	margin-left:35%;
+	clear:left;
+	padding-top:5px;
+}
+
+.oneLl div.elementDiv div.indent5 span.ufe-label,
+.oneLl div.elementDiv div.indent10 span.ufe-label,
+.oneLl div.elementDiv div.indent15 span.ufe-label,
+.oneLl div.elementDiv div.indent25 span.ufe-label,
+.oneLl div.elementDiv div.indent30 span.ufe-label,
+.oneLl div.elementDiv div.indent35 span.ufe-label
+{
+	text-align: right;
+	width:auto;
+}
+
+.twoOl div.elementDiv div.indent10 span.ufe-label, .threeOl  div.elementDiv div.indent5 span.ufe-label,
+.twoOl div.elementDiv div.indent10 span.ufe-label, .threeOl  div.elementDiv div.indent10 span.ufe-label,
+.twoOl div.elementDiv div.indent15 span.ufe-label, .threeOl  div.elementDiv div.indent15 span.ufe-label,
+.twoOl div.elementDiv div.indent25 span.ufe-label, .threeOl  div.elementDiv div.indent25 span.ufe-label,
+.twoOl div.elementDiv div.indent10 span.ufe-label, .threeOl  div.elementDiv div.indent30 span.ufe-label,
+.twoOl div.elementDiv div.indent10 span.ufe-label, .threeOl  div.elementDiv div.indent35 span.ufe-label
+{
+	float: left;
+	display:block;
+	margin: 0 0 1em 0;
+	padding: 0 1% 0 0;
+	text-align: right;
+	width: auto;
+}
+
+/*======================================special selectors==============================*/
+/*numbered*/
+.numbered div.elementDiv input{
+	margin-left:25px;
+}
+
+/*two line labels need this*/
+.twoLineLabel div.elementDiv label,
+.twoLineLabel div.elementDiv .ufe-label{
+	height:35px;
+	display:table-cell;
+	vertical-align: bottom;
+}
+
+/*three line labels need this*/
+.threeLineLabel div.elementDiv label,
+.threeLineLabel div.elementDiv .ufe-label
+{
+	height:45px;
+	display:table-cell;
+	vertical-align: bottom;
+}
+
+/*four line labels need this*/
+.fourLineLabel div.elementDiv label,
+.fourLineLabel div.elementDiv .ufe-label
+{
+	height:68px;
+	display:table-cell;
+	vertical-align: bottom;
+}
+
+/*for creating breaks in two/three column layouts*/
+.break30 div.elementDiv{
+	min-height:30px;
+}
+
+.break40 div.elementDiv{
+	min-height:30px;
+}
+
+.break50 div.elementDiv{
+	min-height:50px;
+}
+
+.break60 div.elementDiv{
+	min-height:60px;
+}
+
+.break70 div.elementDiv{
+	min-height:70px;
+}
+
+/*==================================================================================================================== 
+													oneLr
+====================================================================================================================*/
+
+.oneLr div.elementDiv,
+	.oneLl .oneLr div.elementDiv,
+	.oneOl .oneLr div.elementDiv,
+	.twoOl .oneLr div.elementDiv,
+	.threeOl .oneLr div.elementDiv
+{
+	width: 100%;
+	display: block;
+	margin:0 auto;
+	clear:both;
+	padding: 0px;
+	height:auto;
+}
+
+.oneLr div.elementDiv span.ufe-label,
+	.oneLl .oneLr div.elementDiv span.ufe-label,
+	.oneOl .oneLr div.elementDiv span.ufe-label,
+	.twoOl .oneLr div.elementDiv span.ufe-label,
+	.threeOl .oneLr div.elementDiv span.ufe-label
+{
+  display: block;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0 1% 0 0;
+  text-align: right;
+  width: 42%;
+}
+
+
+/*==========================================================================================================================
+													oneLl
+===========================================================================================================================*/
+
+/*new div selectors*/
+.oneLl div.elementDiv,
+	.oneLr .oneLl div.elementDiv,
+	.twoOl .oneLl div.elementDiv,
+	.oneOl .oneLl div.elementDiv,
+	.threeOl .oneLl div.elementDiv
+{
+	width: 100%;
+	display:block;
+	margin: 0 auto;
+	clear:both;
+	float:none;
+}
+
+
+.oneLl div.elementDiv span.ufe-label,
+	.oneLr .oneLl div.elementDiv span.ufe-label,
+	.twoOl .oneLl div.elementDiv span.ufe-label,
+	.oneOl .oneLl div.elementDiv span.ufe-label,
+	.threeOl .oneLl div.elementDiv span.ufe-label
+	
+{
+  display: block;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0 1% 0 0%;
+  text-align: left;
+  width: 32%;
+}
+
+/*============================================================================================================================ 
+														oneOl
+=============================================================================================================================*/
+
+
+.oneOl div.elementDiv,
+	.oneLr .oneOl div.elementDiv,
+	.oneLl .oneOl div.elementDiv,
+	.twoOl .oneOl div.elementDiv,
+	.threeOl .oneOl div.elementDiv
+{
+	display : block;
+	float : left;
+	margin : 0 0 0 2%;
+	padding : 3px 0;
+	width : 90%;
+	clear:none;
+}
+
+
+.oneOl div.elementDiv span.ufe-label,
+	.oneLr .oneOl  div.elementDiv span.ufe-label,
+	.oneLl .oneOl  div.elementDiv span.ufe-label,
+	.twoOl .oneOl  div.elementDiv span.ufe-label,
+	.threeOl .oneOl  div.elementDiv span.ufe-label
+{
+	display : block;
+	text-align:left;
+	float:none;
+	margin: 0 0 3px 0;
+	padding: 0 0 0 0;
+
+}
+
+/*============================================================================================================================ 
+														twoOl
+=============================================================================================================================*/
+
+
+.twoOl div.elementDiv,
+	.oneLr .twoOl div.elementDiv,
+	.oneLl .twoOl div.elementDiv,
+	.oneOl .twoOl div.elementDiv,
+	.threeOl .twoOl div.elementDiv
+{
+	display : block;
+	float : left;
+	margin : 0 0 0 2%;
+	padding : 3px 0;
+	width : 48%;
+	clear:none;
+
+}
+
+
+.twoOl div.elementDiv span.ufe-label,
+	.oneLr .twoOl div.elementDiv span.ufe-label,
+	.oneLl .twoOl div.elementDiv span.ufe-label,
+	.oneOl .twoOl div.elementDiv span.ufe-label,
+	.threeOl .twoOl div.elementDiv span.ufe-label
+{
+	display: block;
+	text-align:left;
+	float:none;
+	margin: 0 0 3px 0;
+	padding: 0 0 0 0;
+	width:100%;
+}
+
+
+/*============================================================================================================================
+													threeOl
+============================================================================================================================*/
+
+
+.threeOl div.elementDiv,
+	.oneLr .threeOl div.elementDiv,
+	.oneLl .threeOl div.elementDiv,
+	.oneOl .threeOl div.elementDiv,
+	.twoOl .threeOl div.elementDiv
+{
+	width: 31%;
+    margin: 0 1% 0 0;
+    float: left;
+	padding-bottom:4px;
+	clear:none;
+}
+
+.threeOl div.elementDiv span.ufe-label,
+	.oneLr .threeOl div.elementDiv span.ufe-label,
+	.oneLl .threeOl div.elementDiv span.ufe-label,
+	.oneOl .threeOl div.elementDiv span.ufe-label,
+	.twoOl .threeOl div.elementDiv span.ufe-label
+{
+	display : block;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 2px 0;
+	padding: 0 0 0 0;
+}
+
+/*============================================================================================================================
+													fourOl
+============================================================================================================================*/
+
+
+.fourOl div.elementDiv,
+	.oneLr .fourOl div.elementDiv,
+	.oneLl .fourOl div.elementDiv,
+	.oneOl .fourOl div.elementDiv,
+	.twoOl .fourOl div.elementDiv
+{
+	width: 24%;
+    margin: 0 1% 0 0;
+    float: left;
+	padding-bottom:4px;
+	clear:none;
+}
+
+
+.fourOl div.elementDiv span.ufe-label,
+	.oneLr .fourOl div.elementDiv span.ufe-label,
+	.oneLl .fourOl div.elementDiv span.ufe-label,
+	.oneOl .fourOl div.elementDiv span.ufe-label,
+	.twoOl .fourOl div.elementDiv span.ufe-label
+{
+	display : block;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 2px 0;
+	padding: 0 0 0 0;
+}
+
+/*============================================================================================================================
+													fiveOl
+============================================================================================================================*/
+
+
+.fiveOl div.elementDiv,
+	.oneLr .fiveOl div.elementDiv,
+	.oneLl .fiveOl div.elementDiv,
+	.oneOl .fiveOl div.elementDiv,
+	.twoOl .fiveOl div.elementDiv
+{
+	width: 19%;
+    margin: 0 1% 0 0;
+    float: left;
+	padding-bottom:4px;
+	clear:none;
+}
+
+
+.fiveOl div.elementDiv span.ufe-label,
+	.oneLr .fiveOl div.elementDiv span.ufe-label,
+	.oneLl .fiveOl div.elementDiv span.ufe-label,
+	.oneOl .fiveOl div.elementDiv span.ufe-label,
+	.twoOl .fiveOl div.elementDiv span.ufe-label
+{
+	display : block;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 2px 0;
+	padding: 0 0 0 0;
+}
+
+
+/*============================================================================================================================
+													sixOl
+============================================================================================================================*/
+
+
+.sixOl div.elementDiv,
+	.oneLr .sixOl div.elementDiv,
+	.oneLl .sixOl div.elementDiv,
+	.oneOl .sixOl div.elementDiv,
+	.twoOl .sixOl div.elementDiv
+{
+	width: 14%;
+    margin: 0 1% 0 0;
+    float: left;
+	padding-bottom:4px;
+	clear:none;
+}
+
+
+.sixOl div.elementDiv span.ufe-label,
+	.oneLr .sixOl div.elementDiv span.ufe-label,
+	.oneLl .sixOl div.elementDiv span.ufe-label,
+	.oneOl .sixOl div.elementDiv span.ufe-label,
+	.twoOl .sixOl div.elementDiv span.ufe-label
+{
+	display : block;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 2px 0;
+	padding: 0 0 0 0;
+}
+
+/*============================================================================================================================
+													sevenOl
+============================================================================================================================*/
+
+
+.sevenOl div.elementDiv,
+	.oneLr .sevenOl div.elementDiv,
+	.oneLl .sevenOl div.elementDiv,
+	.oneOl .sevenOl div.elementDiv,
+	.twoOl .sevenOl div.elementDiv
+{
+	width: 13%;
+    margin: 0 1% 0 0;
+    float: left;
+	padding-bottom:4px;
+	clear:none;
+}
+
+
+.sevenOl div.elementDiv span.ufe-label,
+	.oneLr .sevenOl div.elementDiv span.ufe-label,
+	.oneLl .sevenOl div.elementDiv span.ufe-label,
+	.oneOl .sevenOl div.elementDiv span.ufe-label,
+	.twoOl .sevenOl div.elementDiv span.ufe-label
+{
+	display : block;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 2px 0;
+	padding: 0 0 0 0;
+}
+
+/*============================================================================================================================
+													eightOl
+============================================================================================================================*/
+
+
+.eightOl div.elementDiv,
+	.oneLr .eightOl div.elementDiv,
+	.oneLl .eightOl div.elementDiv,
+	.oneOl .eightOl div.elementDiv,
+	.twoOl .eightOl div.elementDiv
+{
+	width: 11%;
+    margin: 0 1% 0 0;
+    float: left;
+	padding-bottom:4px;
+	clear:none;
+}
+
+
+.eightOl div.elementDiv span.ufe-label,
+	.oneLr .eightOl div.elementDiv span.ufe-label,
+	.oneLl .eightOl div.elementDiv span.ufe-label,
+	.oneOl .eightOl div.elementDiv span.ufe-label,
+	.twoOl .eightOl div.elementDiv span.ufe-label
+{
+	display : block;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 2px 0;
+	padding: 0 0 0 0;
+}
+
+/*==============================================================================================================
+												Data Correction
+===============================================================================================================*/
+
+
+.ufe-acct-error td{
+	color: #f00;
+	background-color: transparent;
+	text-align: left;
+	font-weight: bold;
+	border: none
+}
+
+.ufe-acct-error table{
+	background-color: transparent;
+    border: none;
+}
+
+.ufe-system-link, #ufe-system-menulink{
+	padding: 3px; 
+	text-align: left
+}
+
+div.ufe-data-error table{
+	clear: left;
+}
+
+div.ufe-data-error table td{
+	text-align: left;
+}
+
+#ufe-data-crx{
+	display: block;
+	margin: 0px auto;
+}
+
+body#ufe-data-crx table .ufe-label {
+    margin: 0 5px 0 0;
+    padding: 0;
+    text-align: left;
+    width: auto;
+}

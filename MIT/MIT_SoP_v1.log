@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  3 DEC 2013 17:14
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  3 DEC 2013 22:34
 entering extended mode
-**Cornell_SoP_v2.tex
-
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v2
-.tex
+**MIT_SoP_v1.tex
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\MIT\MIT_SoP_v1.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -33,7 +31,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\fullpage.sty
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\MIT\fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
@@ -48,24 +46,23 @@ Package: fullpage 1999/02/23 1.1 (PWD)
 \f@ncyO@olf=\skip51
 \f@ncyO@orf=\skip52
 )
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v2
-.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\MIT\MIT_SoP_v1.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
- Make it at least 21.45004pt.
+ Make it at least 21.95004pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -74,19 +71,17 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 ]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
- [2]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
- [3] [4]
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Cornell\Cornell_SoP_v2
-.aux) ) 
+ [2] [3]
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\MIT\MIT_SoP_v1.aux) ) 
 Here is how much of TeX's memory you used:
- 380 strings out of 494020
- 4654 string characters out of 3143896
- 59746 words of memory out of 3000000
- 3740 multiletter control sequences out of 15000+200000
+ 381 strings out of 494020
+ 4584 string characters out of 3143896
+ 57746 words of memory out of 3000000
+ 3741 multiletter control sequences out of 15000+200000
  4900 words of font info for 18 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 25i,10n,43p,1720b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,10n,43p,2076b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Cornell_SoP_v2.dvi (4 pages, 22656 bytes).
+Output written on MIT_SoP_v1.dvi (3 pages, 18240 bytes).

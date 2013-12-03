@@ -1,0 +1,455 @@
+#ufe-content {
+	width: 710px;
+}
+
+#ufe-content legend {
+	border: 1px solid #CCCCCC;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+#ufe-content h1, #ufe-content h2, #ufe-content h3, #ufe-content h4, #ufe-content h5, #ufe-content h6 {
+	line-height: 1em;
+}
+
+#ufe-content p {
+	line-height: 20px;
+}
+
+/* from cornell #page-title */
+#ufe-header h1, .ufe-header h1, #ufe-system-content h1 {
+  color: #b61b19;
+  font-family: georgia, serif;
+  font-size: 32px;
+  font-weight: normal;  
+  margin-top: 20px;
+  letter-spacing: 0pt;
+  padding: 0px;
+  margin-bottom: 15px;
+  line-height: 36px;
+}
+
+#ufe-header h2 {
+	color: #b61b19;
+}
+
+#ufe-content h4 {
+	margin-bottom: .5em;
+}
+
+#ufe-content option {
+	padding-left: 2px;
+	padding-right: 5px;
+}
+/* for account page */
+
+#ufe-content .ufe-row-end {
+    clear: left;
+}
+div.ufe-2col span.ufe-label {
+    display: block;
+    float: left;
+    margin: 0 0 1em;
+    padding: 0 1% 0 0;
+    text-align: right;
+    width: 42%;
+}
+#ufe-content div.ufe-row span.ufe-label {
+    display: block;
+    float: none;
+    margin: 0 0 3px;
+    padding: 0;
+    text-align: left;
+    width: 95%;
+}
+
+.ufe-note, .ufe-attachment-allowed-types {
+	font-size: 80%;
+}
+.ufe-attachment-allowed-types {
+	padding:0 0 10px 0;
+}
+
+.ufe-alert {
+	text-align: center;
+	font-weight: bold;
+}
+
+#no_payment {
+	border-color: #444;
+	color: #444;
+}
+
+/* suppress client-style border from radio buttons */
+.noborder {
+	border: 0px;
+}
+
+
+/* notes to self during development - remove prior to release */
+.ufe-do-not-release {
+	color: red;
+	font-weight: bold;
+}
+
+#ufe-data-crx #ufe-content, #ufe-print-wrapper #ufe-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+#ufe-data-crx #ufe-content table {
+	width: auto;
+}
+
+
+hr.ufe-divider { 
+  background: #CCCCCC;
+  color: #CCCCCC;
+  border: none;
+  border-top: 1px solid #CCCCCC;
+  height: 1px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	border: 0;
+}
+
+/* fix a label float issue in IE9 */
+.fiveOl  div.elementDiv span.ufe-label,
+		 .oneLr .fiveOl  div.elementDiv span.ufe-label,
+		 .oneLl .fiveOl  div.elementDiv span.ufe-label,
+		 .oneOl .fiveOl  div.elementDiv span.ufe-label,
+		 .twoOl .fiveOl  div.elementDiv span.ufe-label
+{
+		 display : block;
+		 text-align: left;
+		 width: 100%;
+		 margin: 0 0 2px 0;
+		 padding: 0 0 0 0;
+		 float: none;
+}
+.fourOl  div.elementDiv span.ufe-label,
+		 .oneLr .fourOl  div.elementDiv span.ufe-label,
+		 .oneLl .fourOl  div.elementDiv span.ufe-label,
+		 .oneOl .fourOl  div.elementDiv span.ufe-label,
+		 .twoOl .fourOl  div.elementDiv span.ufe-label
+{
+		 display : block;
+		 text-align: left;
+		 width: 100%;
+		 margin: 0 0 2px 0;
+		 padding: 0 0 0 0;
+		 float: none;
+}
+.threeOl  div.elementDiv span.ufe-label,
+		 .oneLr .threeOl  div.elementDiv span.ufe-label,
+		 .oneLl .threeOl  div.elementDiv span.ufe-label,
+		 .oneOl .threeOl  div.elementDiv span.ufe-label,
+		 .twoOl .threeOl  div.elementDiv span.ufe-label
+{
+		 display : block;
+		 text-align: left;
+		 width: 100%;
+		 margin: 0 0 2px 0;
+		 padding: 0 0 0 0;
+		 float: none;
+}
+
+.ufe-row-end{
+clear: both;
+}
+/* fix a margin problem in IE7 */
+.oneLr div.elementDiv,
+	.oneLl .oneLr div.elementDiv,
+	.oneOl .oneLr div.elementDiv,
+	.twoOl .oneLr div.elementDiv,
+	.threeOl .oneLr div.elementDiv
+{
+	width: 100%;
+	display: block;
+	margin: 0 0 1em 0;
+	clear:both;
+	padding: 0px;
+	height:auto;
+}
+
+.oneLr div.elementDiv span.ufe-label,
+	.oneLl .oneLr div.elementDiv span.ufe-label,
+	.oneOl .oneLr div.elementDiv span.ufe-label,
+	.twoOl .oneLr div.elementDiv span.ufe-label,
+	.threeOl .oneLr div.elementDiv span.ufe-label
+{
+  display: block;
+  float: left;
+  padding: 0 1% 0 0;
+  text-align: right;
+  width: 42%;
+}
+
+div.elementDiv div.ufe-data-error span.ufe-label {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: none;
+}
+
+
+.ufe-inset-table {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ufe-inset-table td {
+	padding: 5px;
+}
+
+/* indent long radio/checkbox labels */
+.labelAlign input {
+	float: left;
+}
+.labelAlign label {
+	display: block;
+	padding-left: 1em;
+}
+div.elementDiv, .radio, div.elementDiv .checkbox {
+	width: 55%;
+}
+
+.ufe-pmjs-buttons input {
+	margin-right: 8px;
+}
+
+table#ratings-table td {
+	font-size: 90%;
+	padding-bottom: 7px;
+}
+
+
+
+
+
+
+/* customize layout.css */
+
+.oneLl div.elementDiv span.ufe-label,
+	.oneLr .oneLl div.elementDiv span.ufe-label,
+	.twoOl .oneLl div.elementDiv span.ufe-label,
+	.oneOl .oneLl div.elementDiv span.ufe-label,
+	.threeOl .oneLl div.elementDiv span.ufe-label
+	
+{
+  display: block;
+  float: left;
+  padding: 0 1% 0 0;
+  text-align: left;
+  width: 42%;
+}
+
+/* adjust school search results */
+
+#ufe-system-content td {
+	padding: 5px;
+}
+
+/* adjust crx */
+
+#ufe-data-crx table, #ufe-data-crx p, #ufe-data-crx div.elementDiv {
+	font-size: 14px;
+}
+
+.ufe-data-error td {
+	padding: 5px;
+}
+
+.ufe-input-required-block nobr {
+	margin-right: 7px;
+}
+
+div#ufe-error-navigation {
+	margin: 10px 0 20px 0;
+}
+
+/* adjust school search*/
+
+div.SchoolSearch div.twoOl div.elementDiv {
+	margin-left: 0;
+	margin-right: 2%;
+}
+
+
+input[type=button]:hover, input[type=submit]:hover {
+	border-color: #C0C0C0;
+	background-color: #D3D3D3;
+}
+
+/* override cornellg ol style */
+#ufe-content ol li {
+	background: none;
+	list-style-type: decimal;
+}
+/* override cornellg footer button look for wide style */
+#block-block-5 li.wide { width: 210px;}
+
+/* [ Ticket : E5FE18B09B5B3BB3 ] Adrienne 2012 ACR  */
+
+.ufe-spacer {
+	padding-bottom:5px !important;
+}
+
+#bottom-middle {
+	position:relative;
+	top:-2px;
+	left:15px;
+}
+
+#bottom-left {
+	position:relative;
+	left:4px;	
+}
+
+#block-block-5 {
+	position:relative;
+	left:4px;	
+}
+
+.ufe-margin-left {
+	font-size: 80%;
+	margin-left:44%;
+	position:relative;
+	top:-5px;
+}
+
+.ufe-checkbox-fix input, .ufe-checkbox-fix label{
+	margin-top:4px;
+}
+.section_border{
+	display: inline-block;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	width: 99%;
+	margin-bottom: 8px;
+}
+.shrink_n_center{
+display: relative;
+margin: 0 auto;
+width: 80%;
+display: block;
+}
+.shrink_n_center_radio{
+display: relative;
+margin: 0 auto;
+width: 80%;
+margin-left: 65px;
+}
+#content #ufe-content .ufe-more-info-icon{
+color: #777;
+padding: 2px 5px;
+background-color: white;
+margin: 0 auto;
+/*border: 1px solid #ccc;*/
+}
+#content #ufe-content .ufe-more-info{
+left: 150px;
+bottom: 0;
+}
+#content #ufe-content .ufe-more-info-icon:hover{
+border: 1px solid #B61B19;
+}
+.aw-debug, .aw-debugTable{
+color: black;
+}
+
+/* = = = = = = = = BEGIN JS Toggle Slide Control Styles = = = = = = = = */
+
+   /* This is the wrapper that goes around the whole toggle control section. */
+   .toggleWrapper {
+       display: inline;
+   }
+
+   /* This is the style for the clickable toggle control itself. */
+   a.ufe-slideToggle-open, a.ufe-slideToggle {
+      text-decoration: none;
+      border: 0;
+   }
+
+   /* This is the style for all the popped-up layers (in this case 6 of them).  Note: you can also absolute position them. */
+    #doc_req {
+       padding: 8px;
+       text-align: left;
+       background: #eee;
+       border: 1px dashed #ccc;
+   }
+
+/* = = = = = = = = END JS Toggle Slide Control Styles = = = = = = = = */
+
+
+
+/* ======  Progress Bar Styles ====== */
+/*---- progress bar styles-----*/
+.ufe-content-header {
+	margin:15px 0 20px;
+	clear:both;
+}
+.ufe-progress-bar-wrapper, .ufe-progress-bar-wrapper-nondeg {
+    line-height: 0.8em;
+    margin: 0 auto;
+    min-height: 40px;
+    width: 700px;
+    z-index: 50;
+}
+.ufe-progress-bar-wrapper-nondeg {
+    width: 700px;
+}
+
+.ufe-progress-tab {
+    float: left;
+    width: 175px;
+    min-width: 175px;
+    text-align: center;
+    height: 40px;
+}
+      
+.ufe-progress-label {
+    display: block;
+    margin: 0 10px 2px 3px;
+    font-size: 9px;
+    font-weight: normal;
+    text-align: left;
+    color: #787878;
+   height:22px;
+}
+
+/* default for upcoming sections */
+.ufe-progress-indicator {
+    height: 6px;
+    border-right: 2px solid #ffffff;
+    font-size: 0px;
+    background: url("/apply/cornellg/images/progress_bar_back.gif") repeat-x;
+    border: 0;
+    border-right: 2px solid #E1E1E1;
+}   
+
+
+/* previous sections */
+.previous {
+    background: transparent;
+    background-color: #C3C3C3;
+}
+
+
+/* current section */
+.current-label , .bold {
+    font-weight: bold;
+}
+
+ .current {
+    background: transparent;
+    background-color: #6E695C;
+    border-right: 0;
+}
+
+.last {
+   padding-bottom: 1em;
+}
+/* ======  End Progress Bar Styles ====== */
