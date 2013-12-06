@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  3 DEC 2013 22:34
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  5 DEC 2013 16:57
 entering extended mode
 **MIT_SoP_v1.tex
 (C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\MIT\MIT_SoP_v1.tex
@@ -71,8 +71,6 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 ]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
  [2] [3]
 (C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\MIT\MIT_SoP_v1.aux) ) 
 Here is how much of TeX's memory you used:
@@ -82,6 +80,6 @@ Here is how much of TeX's memory you used:
  3741 multiletter control sequences out of 15000+200000
  4900 words of font info for 18 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 25i,10n,43p,2076b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,10n,43p,2036b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MIT_SoP_v1.dvi (3 pages, 18240 bytes).
+Output written on MIT_SoP_v1.dvi (3 pages, 16060 bytes).
