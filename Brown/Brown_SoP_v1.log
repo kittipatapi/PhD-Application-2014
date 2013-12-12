@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  12 DEC 2013 21:39
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2013.4.30)  12 DEC 2013 17:14
 entering extended mode
-**UPenn_SoP_v1.tex
+**Brown_SoP_v1.tex
 
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\UPenn\UPenn_SoP_v1.tex
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Brown\Brown_SoP_v1.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,7 +32,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\UPenn\fullpage.sty
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Brown\fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
@@ -47,20 +47,20 @@ Package: fullpage 1999/02/23 1.1 (PWD)
 \f@ncyO@olf=\skip51
 \f@ncyO@orf=\skip52
 )
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\UPenn\UPenn_SoP_v1.aux
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Brown\Brown_SoP_v1.aux
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -71,15 +71,15 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 [1
 
 ] [2] [3]
-(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\UPenn\UPenn_SoP_v1.aux
+(C:\Users\kittipat\Documents\GitHub\PhD-Application-2014\Brown\Brown_SoP_v1.aux
 ) ) 
 Here is how much of TeX's memory you used:
- 382 strings out of 494020
- 4629 string characters out of 3143896
+ 381 strings out of 494020
+ 4622 string characters out of 3143896
  57746 words of memory out of 3000000
- 3742 multiletter control sequences out of 15000+200000
+ 3741 multiletter control sequences out of 15000+200000
  4900 words of font info for 18 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 25i,10n,43p,2121b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,11n,43p,2152b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on UPenn_SoP_v1.dvi (3 pages, 17772 bytes).
+Output written on Brown_SoP_v1.dvi (3 pages, 18428 bytes).
